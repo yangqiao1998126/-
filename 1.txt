@@ -1,9 +1,0 @@
-2222
-
-git init  当前文件夹创建了一个.git隐藏文件
-
-git add 1.txt 将1.txt添加到.git这个暂存区
-
-git commit -m "描述" 将暂存区的文件提交到工厂库
-
-git log 查看操作
