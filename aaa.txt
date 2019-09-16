@@ -1,0 +1,18 @@
+git add xxxx	添加单个txt文件
+gity add *.txt  添加所有txt文件
+
+
+git有暂存区
+
+
+git add将文件添加到暂存区
+
+git commit -m “描述”
+将暂存区的内容提交到版本库
+
+
+git log  查看操作内容
+
+版本回退
+
+
