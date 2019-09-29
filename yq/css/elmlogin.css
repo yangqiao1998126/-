@@ -1,0 +1,141 @@
+    *{
+        margin:0px;
+        padding: 0px;
+    }
+    #box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /* border: 1px solid red; */
+        overflow: hidden;
+    }
+    #box  #top{
+        height: 110px;
+        position: fixed;
+        background: #0092FF; 
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    #top img{
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        margin-top: 25px;
+        margin-left: 20px;
+        float: left;
+    }
+    #top .title{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #fff;
+        margin-top: 30px;
+        position: relative;
+        left: 20px;
+    }
+
+    .titles span{
+        color: #fff;
+        font-size: 12px;
+        position: relative;
+        top: -1px;
+    }
+
+
+/* <!-- 红包、金币 --> */
+    .center{
+        height: 470px;
+        width: 100%;
+        /* border: darkgoldenrod 1px solid; */
+        margin-top: 110px;
+    }
+    .icon{
+        height: 90px;
+        width: 100%;
+        background: #ECECEC;
+        display: flex;
+        justify-content: space-between;
+    }
+    .icon div{
+        background: #fff;
+        width: 49.8%;
+    }
+    .icon .red .red-num{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 70px;
+    margin-top: 30px;
+    color: #F43C33;
+    }
+    .icon .red .red-num span{
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    .icon .red .red-bag{
+        font-size: 15px;
+        color: #000;
+        margin-left: 68px;
+        position: relative;
+        bottom: 15px;
+    }
+/* 金币 */
+    .icon .money .money-num{
+        font-size: 25px;
+        font-weight: bolder;
+        margin-left: 70px;
+        margin-top: 30px;
+        color: #94D94A;
+    }
+    .icon .money .money-num span{
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    .icon .money .money-bag{
+        font-size: 15px;
+        color: #000;
+        margin-left: 68px;
+        position: relative;
+        bottom: 15px;
+    }
+ 
+/* 广告 */
+    .ad img{
+        width: 100%;
+        height: 90px;
+        margin-top: 10px;
+    } 
+
+/* 隐私 */
+.privacy{
+   margin-left: 150px;
+   margin-top: 20px;
+   color: #4DA6F0;
+}                
+/* 菜单 */
+.end{
+    width: 100%;
+    height: 55px;
+    background: rgb(255, 255, 255);
+    margin-top: 32px;
+    
+}
+.end ul{
+    margin-left: 40px;
+    position: absolute;
+}
+.end ul li{
+    list-style: none;
+    float: left;
+    margin-right: 55px;
+}
+
+.end ul li p{
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    right: 2px;
+    top: -5px;
+    color: #818181;
+}

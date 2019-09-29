@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+    .yq_head{height: 100px;width:100%;background: #0af;position: fixed;top: 0;left:0;z-index: 10}
+    .yq_footer{font-size: 13px;;width:100%;height:55px;background: #ffffff;;position: fixed;bottom: 0;left: 0;border-top: 1px #ccc solid;
+        display: flex;justify-content: space-between;align-items: center;color: #aaa;font-size:13px;}
+        .yq_footer div:first-child p{color: black;font-weight: 900}
+
+    
+    .yq_main{width:100%;margin-top:100px;overflow-y: auto;margin-bottom: 55px;overflow-x: hidden;
+           }
+     
+    .yq_main_yi{width:100%; display: flex;justify-content: space-between}
+        .banner{height: 135px;width: 100%;margin: 10px auto;overflow: hidden;}
+        .swiper-slide{
+            float: left;
+        } 
+         .swiper-wrapper{
+            width: 300%
+        }
+
+    .yq_main_xuan{width:93%;margin:15px auto;display: flex;
+                    font-size:13px;justify-content: space-between;
+                    font-weight: 900;color: #bbb;}
+        .xuanxiangka:first-child{color: black;font-size: 14px;}
+        .xuanxiangka:hover{cursor: pointer;color: black}
+    .paixu{display: none;}
+    .paixu_yi{display: block;}
+
+    .beiyong{position: fixed;top:99px;width:93%;display: flex;
+                    font-size:13px;justify-content: space-between;
+                    font-weight: 900;color: #bbb;z-index: 100;left:2%;
+                    line-height: 40px;height: 40px;;background: white;margin-bottom: 40px;}
+
+    
+                    
+    </style>
+</head>
+<body style="overflow-x:hidden;">
+       <div class="yq_head">
+           <div style="position:relative;top:10px;left:15px;">
+                <img style="width:20px;height:25px;position:relative;top:5px;" src="img/1.png" alt="">
+                <span style="color:white;font-weight:800;">太原市人民政府</span>
+                <img src="img/2.png" alt="">
+            </div>
+            <a href="sousuo.html" target="_self" style="text-decoration:none;"><div style="width:90%;height:36px;font-size:13px;color:#bbb;margin:0 auto;background:white;position:relative;top:25px;text-align:center;">
+                <img style="position:relative;top:5px;" src="img/3.png" alt="">搜索饿了么商家、商品名称
+            </div></a>
+       </div>
+       <div class="gd">
+            <div class="yq_main">
+                    <div class="yq_main_yi">
+                        <div style="width:18%;height:70px;text-align: center;margin-top: 5px;">
+                            <img style="width:45px;height:45px;" src="img/4.png" alt=""><br>
+                            <span style="color:rgb(26, 24, 24);font-size: 12px;">食美</span>
+                        </div>
+                        <div style="width:18%;height:70px;text-align: center;margin-top: 5px;">
+                                <img style="width:45px;height:45px;" src="img/5.png" alt=""><br>
+                                <span style="color:rgb(26, 24, 24);font-size: 12px;">美食</span>
+                        </div>
+                        <div style="width:18%;height:70px;text-align: center;margin-top: 5px;">
+                                <img style="width:45px;height:45px;" src="img/6.png" alt=""><br>
+                                <span style="color:rgb(26, 24, 24);font-size: 12px;">美食</span>
+                        </div>
+                        <div style="width:18%;height:70px;text-align: center;margin-top: 5px;">
+                                <img style="width:45px;height:45px;" src="img/7.png" alt=""><br>
+                                <span style="color:rgb(26, 24, 24);font-size: 12px;">美食</span>
+                        </div>
+                        <div style="width:18%;height:70px;text-align: center;margin-top: 5px;">
+                                <img style="width:45px;height:45px;" src="img/8.png" alt=""><br>
+                                <span style="color:rgb(26, 24, 24);font-size: 12px;">美食</span>
+                            </div>
+                    </div>
+
+                    <div class="yq_main_yi">
+                            <div style="width:18%;height:70px;text-align: center;margin-top: 5px;">
+                                <img style="width:45px;height:45px;" src="img/9.png" alt=""><br>
+                                <span style="color:rgb(26, 24, 24);font-size: 12px;">食美</span>
+                            </div>
+                            <div style="width:18%;height:70px;text-align: center;margin-top: 5px;">
+                                    <img style="width:45px;height:45px;" src="img/10.png" alt=""><br>
+                                    <span style="color:rgb(26, 24, 24);font-size: 12px;">美食</span>
+                            </div>
+                            <div style="width:18%;height:70px;text-align: center;margin-top: 5px;">
+                                    <img style="width:45px;height:45px;" src="img/11.png" alt=""><br>
+                                    <span style="color:rgb(26, 24, 24);font-size: 12px;">美食</span>
+                            </div>
+                            <div style="width:18%;height:70px;text-align: center;margin-top: 5px;">
+                                    <img style="width:45px;height:45px;" src="img/12.png" alt=""><br>
+                                    <span style="color:rgb(26, 24, 24);font-size: 12px;">美食</span>
+                            </div>
+                            <div style="width:18%;height:70px;text-align: center;margin-top: 5px;">
+                                    <img style="width:45px;height:45px;" src="img/13.png" alt=""><br>
+                                    <span style="color:rgb(26, 24, 24);font-size: 12px;">美食</span>
+                                </div>
+                    </div>
+
+                    <div class="swiper-container banner">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" >
+                                    <img style="width:100%;height:155px;" src="img/lun1.jpeg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img style="width:100%;height:155px;" src="img/lun2.jpeg" alt="">
+                                </div>
+                                <div class="swiper-slide" >
+                                    <img style="width:100%;height:155px;" src="img/lun3.jpg" alt="">
+                                </div>
+                            </div>
+                    </div>
+
+                    <div style="width:100%;color:#444;text-align:center;margin-top: 15px;;">————&nbsp;推荐商家&nbsp;————</div>
+
+                    <div class="yq_main_xuan">
+                        <span class="xuanxiangka">综合排序</span>
+                        <span  class="xuanxiangka">距离最近</span>
+                        <span  class="xuanxiangka">品质联盟</span>
+                        <span>筛选&nbsp;<img style="position:relative;width:15px;height:15px;top:3px;" src="img/shaixuan.png" alt=""></span>
+                    </div>
+
+                        <div class="paixu paixu_yi">
+                            <div style="width:93%;height:178px;margin:0 auto;">
+                                <div style="float:left;width:20%">
+                                    <img style="width:100%;height:65px;" src="img/dj1.jpg" alt="">
+                                </div>
+                                <div style="width:75%;height:100%;float:right">
+                                    <span style="color: #bbb; position: relative;top:-2px;font-size:12px;background:yellow;color: darkred;font-weight:900;">品牌</span>
+                                <a href="dianpu.html" target="_self"  style="text-decoration:none;color:black"><span style="font-weight:900;">书亦烧仙草(太原市区杏花岭区)</span></a> 
+                                    <span style="float:right">···</span>
+
+                                    <p style="margin-top:3px;">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjUwJSIgeTI9IjUwJSIgaWQ9ImEiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkRFMDAiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjRkZCMDAwIiBvZmZzZXQ9IjEwMCUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJNNTQuMDE3IDguMDcybC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w1My42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bS00OCAwTDMuNDY1IDkuNjMzYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDUuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMEw3LjU1IDMuMzUybDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2TDguNDk3IDYuMjY5bC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bTEyIDBsLTIuNTUyIDEuNTYxYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDE3LjYzLjU4OWMuMjEzLS41MTUuNTU3LS41MjMuNzc0IDBsMS4xNDYgMi43NjMgMi45ODIuMjM3Yy41NTYuMDQ0LjY3LjM2OC4yNC43MzZsLTIuMjc0IDEuOTQ0LjY5NiAyLjkxYy4xMy41NDItLjE0My43NS0uNjI2LjQ1NGwtMi41NTEtMS41NnptMTIgMGwtMi41NTIgMS41NjFjLS40NzYuMjkxLS43NTguMDk2LS42MjYtLjQ1NWwuNjk2LTIuOTA5LTIuMjczLTEuOTQ0Yy0uNDI0LS4zNjItLjMyNS0uNjkxLjIzOS0uNzM2bDIuOTgyLS4yMzdMMjkuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMGwxLjE0NiAyLjc2MyAyLjk4Mi4yMzdjLjU1Ni4wNDQuNjcuMzY4LjI0LjczNmwtMi4yNzQgMS45NDQuNjk2IDIuOTFjLjEzLjU0Mi0uMTQzLjc1LS42MjYuNDU0bC0yLjU1MS0xLjU2em0xMiAwbC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w0MS42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6IiBmaWxsPSJ1cmwoI2EpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" alt="">
+                                        <span style="font-size:12px;color: #bbb;">4.8&nbsp;&nbsp;月售552单</span>
+                                        <span style="background:#0af;float:right;font-size: 12px;color: white;">蜂鸟专送</span>
+                                    </p>
+
+                                    <p style="margin-top:3px;">
+                                        <span style="font-size:12px;color: #666;">￥20起送&nbsp;&nbsp;|&nbsp;&nbsp;配送费￥4</span>
+                                        <span style="font-size:12px;float: right;color: #666;">2.72km|30分钟</span>
+                                    </p>
+
+                                    <p style="margin-top:3px;font-size: 12px;margin-top: 5px;color: #666;">
+                                        米粉米线&nbsp;
+                                        <span style="border:1px solid #ccc;font-size: 11px;color: #666;">支持自取</span>
+                                        &nbsp;品质联盟
+                                    </p>
+
+                                    <p style="height:0.4%;width:98%;background:#ddd;margin:10px auto 0 auto;;"></p>
+
+                                    <div>
+                                            <details>     
+                                                    <summary style="font-size:12px;float: right">4个活动</summary>
+                                                <p style="font-size:11px;color: #444">
+                                                    <span  style="color:white;background:green;font-size:12px;">首</span>
+                                                    &nbsp;&nbsp;新用户下单立减一元
+                                                    </p>
+                                                <p style="font-size:11px;color: #444">
+                                                        <span  style="color:white;background:#5fe;;font-size:12px;">减</span>
+                                                        &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                </p>
+                                                <p style="font-size:11px;color: #444">
+                                                        <span  style="color:white;background:rgb(18, 33, 240);;font-size:12px;">特</span>
+                                                        &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                </p>
+                                                <p style="font-size:11px;color: #444">
+                                                        <span  style="color:white;background:rgb(238, 11, 136);;font-size:12px;">折</span>
+                                                        &nbsp;&nbsp;折扣商品8折起
+                                                </p>
+                                                <!-- <p style="font-size:11px;color: #444">
+                                                        <span  style="color:white;background:rgb(42, 43, 42);;font-size:12px;">票</span>
+                                                        &nbsp;&nbsp;该商家支持开发票
+                                                </p> -->
+                                            </details> 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="width:100%;height:1px;background:#ddd;margin:3px 0 8px 0;"></div>
+                        
+                            <div style="width:93%;height:178px;margin:0 auto;">
+                                    <div style="float:left;width:20%">
+                                        <img style="width:100%;height:65px;" src="img/1-2.png" alt="">
+                                    </div>
+                                    <div style="width:75%;height:100%;float:right">
+                                        <span style="color: #bbb; position: relative;top:-2px;font-size:12px;background:yellow;color: darkred;font-weight:900;">品牌</span>
+                                        <span style="font-weight:900;">快乐柠檬(太原食品街店)</span>
+                                        <span style="float:right">···</span>
+                
+                                        <p style="margin-top:3px;">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjUwJSIgeTI9IjUwJSIgaWQ9ImEiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkRFMDAiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjRkZCMDAwIiBvZmZzZXQ9IjEwMCUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJNNTQuMDE3IDguMDcybC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w1My42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bS00OCAwTDMuNDY1IDkuNjMzYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDUuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMEw3LjU1IDMuMzUybDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2TDguNDk3IDYuMjY5bC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bTEyIDBsLTIuNTUyIDEuNTYxYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDE3LjYzLjU4OWMuMjEzLS41MTUuNTU3LS41MjMuNzc0IDBsMS4xNDYgMi43NjMgMi45ODIuMjM3Yy41NTYuMDQ0LjY3LjM2OC4yNC43MzZsLTIuMjc0IDEuOTQ0LjY5NiAyLjkxYy4xMy41NDItLjE0My43NS0uNjI2LjQ1NGwtMi41NTEtMS41NnptMTIgMGwtMi41NTIgMS41NjFjLS40NzYuMjkxLS43NTguMDk2LS42MjYtLjQ1NWwuNjk2LTIuOTA5LTIuMjczLTEuOTQ0Yy0uNDI0LS4zNjItLjMyNS0uNjkxLjIzOS0uNzM2bDIuOTgyLS4yMzdMMjkuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMGwxLjE0NiAyLjc2MyAyLjk4Mi4yMzdjLjU1Ni4wNDQuNjcuMzY4LjI0LjczNmwtMi4yNzQgMS45NDQuNjk2IDIuOTFjLjEzLjU0Mi0uMTQzLjc1LS42MjYuNDU0bC0yLjU1MS0xLjU2em0xMiAwbC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w0MS42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6IiBmaWxsPSJ1cmwoI2EpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" alt="">
+                                            <span style="font-size:12px;color: #bbb;">4.8&nbsp;&nbsp;月售552单</span>
+                                            <span style="background:#0af;float:right;font-size: 12px;">蜂鸟专送</span>
+                                        </p>
+                
+                                        <p style="margin-top:3px;">
+                                            <span style="font-size:12px;color: #666;">￥20起送&nbsp;&nbsp;|&nbsp;&nbsp;配送费￥4</span>
+                                            <span style="font-size:12px;float: right;color: #666;">2.72km|30分钟</span>
+                                        </p>
+                
+                                        <p style="margin-top:3px;font-size: 12px;margin-top: 5px;color: #666;">
+                                            米粉米线&nbsp;
+                                            <span style="border:1px solid #ccc;font-size: 11px;color: #666;">支持自取</span>
+                                            &nbsp;品质联盟
+                                        </p>
+                
+                                        <p style="height:0.4%;width:98%;background:#ddd;margin:10px auto 0 auto;;"></p>
+                
+                                        <div>
+                                                <details>     
+                                                        <summary style="font-size:12px;float: right">5个活动</summary>
+                                                    <p style="font-size:11px;color: #444">
+                                                        <span  style="color:white;background:green;font-size:12px;">首</span>
+                                                        &nbsp;&nbsp;新用户下单立减一元
+                                                        </p>
+                                                    <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:#5fe;;font-size:12px;">减</span>
+                                                            &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                    </p>
+                                                    <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:rgb(18, 33, 240);;font-size:12px;">特</span>
+                                                            &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                    </p>
+                                                    <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:rgb(238, 11, 136);;font-size:12px;">折</span>
+                                                            &nbsp;&nbsp;折扣商品8折起
+                                                    </p>
+                                                    <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:rgb(42, 43, 42);;font-size:12px;">票</span>
+                                                            &nbsp;&nbsp;该商家支持开发票
+                                                    </p>
+                                                </details> 
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div style="width:100%;height:1px;background:#ddd;margin:3px 0 8px 0;"></div>
+
+                            <div style="width:93%;height:178px;margin:0 auto;">
+                                    <div style="float:left;width:20%">
+                                        <img style="width:100%;height:65px;" src="img/1-3.jpeg" alt="">
+                                    </div>
+                                    <div style="width:75%;height:100%;float:right">
+                                        <span style="color: #bbb; position: relative;top:-2px;font-size:12px;background:yellow;color: darkred;font-weight:900;">品牌</span>
+                                        <span style="font-weight:900;">小怪兽炒饭·甜品</span>
+                                        <span style="float:right">···</span>
+                
+                                        <p style="margin-top:3px;">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjUwJSIgeTI9IjUwJSIgaWQ9ImEiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkRFMDAiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjRkZCMDAwIiBvZmZzZXQ9IjEwMCUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJNNTQuMDE3IDguMDcybC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w1My42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bS00OCAwTDMuNDY1IDkuNjMzYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDUuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMEw3LjU1IDMuMzUybDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2TDguNDk3IDYuMjY5bC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bTEyIDBsLTIuNTUyIDEuNTYxYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDE3LjYzLjU4OWMuMjEzLS41MTUuNTU3LS41MjMuNzc0IDBsMS4xNDYgMi43NjMgMi45ODIuMjM3Yy41NTYuMDQ0LjY3LjM2OC4yNC43MzZsLTIuMjc0IDEuOTQ0LjY5NiAyLjkxYy4xMy41NDItLjE0My43NS0uNjI2LjQ1NGwtMi41NTEtMS41NnptMTIgMGwtMi41NTIgMS41NjFjLS40NzYuMjkxLS43NTguMDk2LS42MjYtLjQ1NWwuNjk2LTIuOTA5LTIuMjczLTEuOTQ0Yy0uNDI0LS4zNjItLjMyNS0uNjkxLjIzOS0uNzM2bDIuOTgyLS4yMzdMMjkuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMGwxLjE0NiAyLjc2MyAyLjk4Mi4yMzdjLjU1Ni4wNDQuNjcuMzY4LjI0LjczNmwtMi4yNzQgMS45NDQuNjk2IDIuOTFjLjEzLjU0Mi0uMTQzLjc1LS42MjYuNDU0bC0yLjU1MS0xLjU2em0xMiAwbC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w0MS42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6IiBmaWxsPSJ1cmwoI2EpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" alt="">
+                                            <span style="font-size:12px;color: #bbb;">4.8&nbsp;&nbsp;月售552单</span>
+                                            <span style="background:#0af;float:right;font-size: 12px;">蜂鸟专送</span>
+                                        </p>
+                
+                                        <p style="margin-top:3px;">
+                                            <span style="font-size:12px;color: #666;">￥20起送&nbsp;&nbsp;|&nbsp;&nbsp;配送费￥4</span>
+                                            <span style="font-size:12px;float: right;color: #666;">2.72km|30分钟</span>
+                                        </p>
+                
+                                        <p style="margin-top:3px;font-size: 12px;margin-top: 5px;color: #666;">
+                                            米粉米线&nbsp;
+                                            <span style="border:1px solid #ccc;font-size: 11px;color: #666;">支持自取</span>
+                                            &nbsp;品质联盟
+                                        </p>
+                
+                                        <p style="height:0.4%;width:98%;background:#ddd;margin:10px auto 0 auto;;"></p>
+                
+                                        <div>
+                                                <details>     
+                                                        <summary style="font-size:12px;float: right">5个活动</summary>
+                                                    <p style="font-size:11px;color: #444">
+                                                        <span  style="color:white;background:green;font-size:12px;">首</span>
+                                                        &nbsp;&nbsp;新用户下单立减一元
+                                                        </p>
+                                                    <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:#5fe;;font-size:12px;">减</span>
+                                                            &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                    </p>
+                                                    <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:rgb(18, 33, 240);;font-size:12px;">特</span>
+                                                            &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                    </p>
+                                                    <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:rgb(238, 11, 136);;font-size:12px;">折</span>
+                                                            &nbsp;&nbsp;折扣商品8折起
+                                                    </p>
+                                                    <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:rgb(42, 43, 42);;font-size:12px;">票</span>
+                                                            &nbsp;&nbsp;该商家支持开发票
+                                                    </p>
+                                                </details> 
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="paixu">
+                                <div style="width:93%;height:178px;margin:0 auto;">
+                                    <div style="float:left;width:20%">
+                                        <img style="width:100%;height:65px;" src="img/2-1.jpeg" alt="">
+                                    </div>
+                                    <div style="width:75%;height:100%;float:right">
+                                        <span style="color: #bbb; position: relative;top:-2px;font-size:12px;background:yellow;color: darkred;font-weight:900;">品牌</span>
+                                        <span style="font-weight:900;">上帝炸鸡（食品街店）</span>
+                                        <span style="float:right">···</span>
+                
+                                        <p style="margin-top:3px;">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjUwJSIgeTI9IjUwJSIgaWQ9ImEiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkRFMDAiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjRkZCMDAwIiBvZmZzZXQ9IjEwMCUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJNNTQuMDE3IDguMDcybC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w1My42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bS00OCAwTDMuNDY1IDkuNjMzYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDUuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMEw3LjU1IDMuMzUybDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2TDguNDk3IDYuMjY5bC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bTEyIDBsLTIuNTUyIDEuNTYxYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDE3LjYzLjU4OWMuMjEzLS41MTUuNTU3LS41MjMuNzc0IDBsMS4xNDYgMi43NjMgMi45ODIuMjM3Yy41NTYuMDQ0LjY3LjM2OC4yNC43MzZsLTIuMjc0IDEuOTQ0LjY5NiAyLjkxYy4xMy41NDItLjE0My43NS0uNjI2LjQ1NGwtMi41NTEtMS41NnptMTIgMGwtMi41NTIgMS41NjFjLS40NzYuMjkxLS43NTguMDk2LS42MjYtLjQ1NWwuNjk2LTIuOTA5LTIuMjczLTEuOTQ0Yy0uNDI0LS4zNjItLjMyNS0uNjkxLjIzOS0uNzM2bDIuOTgyLS4yMzdMMjkuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMGwxLjE0NiAyLjc2MyAyLjk4Mi4yMzdjLjU1Ni4wNDQuNjcuMzY4LjI0LjczNmwtMi4yNzQgMS45NDQuNjk2IDIuOTFjLjEzLjU0Mi0uMTQzLjc1LS42MjYuNDU0bC0yLjU1MS0xLjU2em0xMiAwbC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w0MS42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6IiBmaWxsPSJ1cmwoI2EpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" alt="">
+                                            <span style="font-size:12px;color: #bbb;">4.8&nbsp;&nbsp;月售552单</span>
+                                            <span style="background:#0af;float:right;font-size: 12px;color: white;">蜂鸟专送</span>
+                                        </p>
+                
+                                        <p style="margin-top:3px;">
+                                            <span style="font-size:12px;color: #666;">￥20起送&nbsp;&nbsp;|&nbsp;&nbsp;配送费￥4</span>
+                                            <span style="font-size:12px;float: right;color: #666;">2.72km|30分钟</span>
+                                        </p>
+                
+                                        <p style="margin-top:3px;font-size: 12px;margin-top: 5px;color: #666;">
+                                            米粉米线&nbsp;
+                                            <span style="border:1px solid #ccc;font-size: 11px;color: #666;">支持自取</span>
+                                            &nbsp;品质联盟
+                                        </p>
+                
+                                        <p style="height:0.4%;width:98%;background:#ddd;margin:10px auto 0 auto;;"></p>
+                
+                                        <div>
+                                                <details>     
+                                                        <summary style="font-size:12px;float: right">5个活动</summary>
+                                                    <p style="font-size:11px;color: #444">
+                                                        <span  style="color:white;background:green;font-size:12px;">首</span>
+                                                        &nbsp;&nbsp;新用户下单立减一元
+                                                        </p>
+                                                    <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:#5fe;;font-size:12px;">减</span>
+                                                            &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                    </p>
+                                                    <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:rgb(18, 33, 240);;font-size:12px;">特</span>
+                                                            &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                    </p>
+                                                    <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:rgb(238, 11, 136);;font-size:12px;">折</span>
+                                                            &nbsp;&nbsp;折扣商品8折起
+                                                    </p>
+                                                    <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:rgb(42, 43, 42);;font-size:12px;">票</span>
+                                                            &nbsp;&nbsp;该商家支持开发票
+                                                    </p>
+                                                </details> 
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div style="width:100%;height:1px;background:#ddd;margin:3px 0 8px 0;"></div>
+                            
+                                <div style="width:93%;height:178px;margin:0 auto;">
+                                        <div style="float:left;width:20%">
+                                            <img style="width:100%;height:65px;" src="img/2-2.png" alt="">
+                                        </div>
+                                        <div style="width:75%;height:100%;float:right">
+                                            <span style="color: #bbb; position: relative;top:-2px;font-size:12px;background:yellow;color: darkred;font-weight:900;">品牌</span>
+                                            <span style="font-weight:900;">梅家焖面（洮北店）</span>
+                                            <span style="float:right">···</span>
+                    
+                                            <p style="margin-top:3px;">
+                                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjUwJSIgeTI9IjUwJSIgaWQ9ImEiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkRFMDAiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjRkZCMDAwIiBvZmZzZXQ9IjEwMCUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJNNTQuMDE3IDguMDcybC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w1My42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bS00OCAwTDMuNDY1IDkuNjMzYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDUuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMEw3LjU1IDMuMzUybDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2TDguNDk3IDYuMjY5bC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bTEyIDBsLTIuNTUyIDEuNTYxYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDE3LjYzLjU4OWMuMjEzLS41MTUuNTU3LS41MjMuNzc0IDBsMS4xNDYgMi43NjMgMi45ODIuMjM3Yy41NTYuMDQ0LjY3LjM2OC4yNC43MzZsLTIuMjc0IDEuOTQ0LjY5NiAyLjkxYy4xMy41NDItLjE0My43NS0uNjI2LjQ1NGwtMi41NTEtMS41NnptMTIgMGwtMi41NTIgMS41NjFjLS40NzYuMjkxLS43NTguMDk2LS42MjYtLjQ1NWwuNjk2LTIuOTA5LTIuMjczLTEuOTQ0Yy0uNDI0LS4zNjItLjMyNS0uNjkxLjIzOS0uNzM2bDIuOTgyLS4yMzdMMjkuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMGwxLjE0NiAyLjc2MyAyLjk4Mi4yMzdjLjU1Ni4wNDQuNjcuMzY4LjI0LjczNmwtMi4yNzQgMS45NDQuNjk2IDIuOTFjLjEzLjU0Mi0uMTQzLjc1LS42MjYuNDU0bC0yLjU1MS0xLjU2em0xMiAwbC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w0MS42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6IiBmaWxsPSJ1cmwoI2EpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" alt="">
+                                                <span style="font-size:12px;color: #bbb;">4.8&nbsp;&nbsp;月售552单</span>
+                                                <span style="background:#0af;float:right;font-size: 12px;">蜂鸟专送</span>
+                                            </p>
+                    
+                                            <p style="margin-top:3px;">
+                                                <span style="font-size:12px;color: #666;">￥20起送&nbsp;&nbsp;|&nbsp;&nbsp;配送费￥4</span>
+                                                <span style="font-size:12px;float: right;color: #666;">2.72km|30分钟</span>
+                                            </p>
+                    
+                                            <p style="margin-top:3px;font-size: 12px;margin-top: 5px;color: #666;">
+                                                米粉米线&nbsp;
+                                                <span style="border:1px solid #ccc;font-size: 11px;color: #666;">支持自取</span>
+                                                &nbsp;品质联盟
+                                            </p>
+                    
+                                            <p style="height:0.4%;width:98%;background:#ddd;margin:10px auto 0 auto;;"></p>
+                    
+                                            <div>
+                                                    <details>     
+                                                            <summary style="font-size:12px;float: right">5个活动</summary>
+                                                        <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:green;font-size:12px;">首</span>
+                                                            &nbsp;&nbsp;新用户下单立减一元
+                                                            </p>
+                                                        <p style="font-size:11px;color: #444">
+                                                                <span  style="color:white;background:#5fe;;font-size:12px;">减</span>
+                                                                &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                        </p>
+                                                        <p style="font-size:11px;color: #444">
+                                                                <span  style="color:white;background:rgb(18, 33, 240);;font-size:12px;">特</span>
+                                                                &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                        </p>
+                                                        <p style="font-size:11px;color: #444">
+                                                                <span  style="color:white;background:rgb(238, 11, 136);;font-size:12px;">折</span>
+                                                                &nbsp;&nbsp;折扣商品8折起
+                                                        </p>
+                                                        <p style="font-size:11px;color: #444">
+                                                                <span  style="color:white;background:rgb(42, 43, 42);;font-size:12px;">票</span>
+                                                                &nbsp;&nbsp;该商家支持开发票
+                                                        </p>
+                                                    </details> 
+                                            </div>
+                                        </div>
+                                </div>
+                
+                                <div style="width:100%;height:1px;background:#ddd;margin:3px 0 8px 0;"></div>
+                
+                                <div style="width:93%;height:178px;margin:0 auto;">
+                                        <div style="float:left;width:20%">
+                                            <img style="width:100%;height:65px;" src="img/2-3.png" alt="">
+                                        </div>
+                                        <div style="width:75%;height:100%;float:right">
+                                            <span style="color: #bbb; position: relative;top:-2px;font-size:12px;background:yellow;color: darkred;font-weight:900;">品牌</span>
+                                            <span style="font-weight:900;">汉堡王(太原华宇23239)</span>
+                                            <span style="float:right">···</span>
+                    
+                                            <p style="margin-top:3px;">
+                                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjUwJSIgeTI9IjUwJSIgaWQ9ImEiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkRFMDAiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjRkZCMDAwIiBvZmZzZXQ9IjEwMCUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJNNTQuMDE3IDguMDcybC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w1My42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bS00OCAwTDMuNDY1IDkuNjMzYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDUuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMEw3LjU1IDMuMzUybDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2TDguNDk3IDYuMjY5bC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bTEyIDBsLTIuNTUyIDEuNTYxYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDE3LjYzLjU4OWMuMjEzLS41MTUuNTU3LS41MjMuNzc0IDBsMS4xNDYgMi43NjMgMi45ODIuMjM3Yy41NTYuMDQ0LjY3LjM2OC4yNC43MzZsLTIuMjc0IDEuOTQ0LjY5NiAyLjkxYy4xMy41NDItLjE0My43NS0uNjI2LjQ1NGwtMi41NTEtMS41NnptMTIgMGwtMi41NTIgMS41NjFjLS40NzYuMjkxLS43NTguMDk2LS42MjYtLjQ1NWwuNjk2LTIuOTA5LTIuMjczLTEuOTQ0Yy0uNDI0LS4zNjItLjMyNS0uNjkxLjIzOS0uNzM2bDIuOTgyLS4yMzdMMjkuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMGwxLjE0NiAyLjc2MyAyLjk4Mi4yMzdjLjU1Ni4wNDQuNjcuMzY4LjI0LjczNmwtMi4yNzQgMS45NDQuNjk2IDIuOTFjLjEzLjU0Mi0uMTQzLjc1LS42MjYuNDU0bC0yLjU1MS0xLjU2em0xMiAwbC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w0MS42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6IiBmaWxsPSJ1cmwoI2EpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" alt="">
+                                                <span style="font-size:12px;color: #bbb;">4.8&nbsp;&nbsp;月售552单</span>
+                                                <span style="background:#0af;float:right;font-size: 12px;">蜂鸟专送</span>
+                                            </p>
+                    
+                                            <p style="margin-top:3px;">
+                                                <span style="font-size:12px;color: #666;">￥20起送&nbsp;&nbsp;|&nbsp;&nbsp;配送费￥4</span>
+                                                <span style="font-size:12px;float: right;color: #666;">2.72km|30分钟</span>
+                                            </p>
+                    
+                                            <p style="margin-top:3px;font-size: 12px;margin-top: 5px;color: #666;">
+                                                米粉米线&nbsp;
+                                                <span style="border:1px solid #ccc;font-size: 11px;color: #666;">支持自取</span>
+                                                &nbsp;品质联盟
+                                            </p>
+                    
+                                            <p style="height:0.4%;width:98%;background:#ddd;margin:10px auto 0 auto;;"></p>
+                    
+                                            <div>
+                                                    <details>     
+                                                            <summary style="font-size:12px;float: right">5个活动</summary>
+                                                        <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:green;font-size:12px;">首</span>
+                                                            &nbsp;&nbsp;新用户下单立减一元
+                                                            </p>
+                                                        <p style="font-size:11px;color: #444">
+                                                                <span  style="color:white;background:#5fe;;font-size:12px;">减</span>
+                                                                &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                        </p>
+                                                        <p style="font-size:11px;color: #444">
+                                                                <span  style="color:white;background:rgb(18, 33, 240);;font-size:12px;">特</span>
+                                                                &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                        </p>
+                                                        <p style="font-size:11px;color: #444">
+                                                                <span  style="color:white;background:rgb(238, 11, 136);;font-size:12px;">折</span>
+                                                                &nbsp;&nbsp;折扣商品8折起
+                                                        </p>
+                                                        <p style="font-size:11px;color: #444">
+                                                                <span  style="color:white;background:rgb(42, 43, 42);;font-size:12px;">票</span>
+                                                                &nbsp;&nbsp;该商家支持开发票
+                                                        </p>
+                                                    </details> 
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+
+
+                        <div class="paixu">
+                                <div style="width:93%;height:178px;margin:0 auto;">
+                                    <div style="float:left;width:20%">
+                                        <img style="width:100%;height:65px;" src="img/3-1.png" alt="">
+                                    </div>
+                                    <div style="width:75%;height:100%;float:right">
+                                        <span style="color: #bbb; position: relative;top:-2px;font-size:12px;background:yellow;color: darkred;font-weight:900;">品牌</span>
+                                        <span style="font-weight:900;">麦乐送（时代广场）</span>
+                                        <span style="float:right">···</span>
+                
+                                        <p style="margin-top:3px;">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjUwJSIgeTI9IjUwJSIgaWQ9ImEiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkRFMDAiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjRkZCMDAwIiBvZmZzZXQ9IjEwMCUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJNNTQuMDE3IDguMDcybC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w1My42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bS00OCAwTDMuNDY1IDkuNjMzYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDUuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMEw3LjU1IDMuMzUybDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2TDguNDk3IDYuMjY5bC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bTEyIDBsLTIuNTUyIDEuNTYxYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDE3LjYzLjU4OWMuMjEzLS41MTUuNTU3LS41MjMuNzc0IDBsMS4xNDYgMi43NjMgMi45ODIuMjM3Yy41NTYuMDQ0LjY3LjM2OC4yNC43MzZsLTIuMjc0IDEuOTQ0LjY5NiAyLjkxYy4xMy41NDItLjE0My43NS0uNjI2LjQ1NGwtMi41NTEtMS41NnptMTIgMGwtMi41NTIgMS41NjFjLS40NzYuMjkxLS43NTguMDk2LS42MjYtLjQ1NWwuNjk2LTIuOTA5LTIuMjczLTEuOTQ0Yy0uNDI0LS4zNjItLjMyNS0uNjkxLjIzOS0uNzM2bDIuOTgyLS4yMzdMMjkuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMGwxLjE0NiAyLjc2MyAyLjk4Mi4yMzdjLjU1Ni4wNDQuNjcuMzY4LjI0LjczNmwtMi4yNzQgMS45NDQuNjk2IDIuOTFjLjEzLjU0Mi0uMTQzLjc1LS42MjYuNDU0bC0yLjU1MS0xLjU2em0xMiAwbC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w0MS42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6IiBmaWxsPSJ1cmwoI2EpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" alt="">
+                                            <span style="font-size:12px;color: #bbb;">4.8&nbsp;&nbsp;月售552单</span>
+                                            <span style="background:#0af;float:right;font-size: 12px;color: white;">蜂鸟专送</span>
+                                        </p>
+                
+                                        <p style="margin-top:3px;">
+                                            <span style="font-size:12px;color: #666;">￥20起送&nbsp;&nbsp;|&nbsp;&nbsp;配送费￥4</span>
+                                            <span style="font-size:12px;float: right;color: #666;">2.72km|30分钟</span>
+                                        </p>
+                
+                                        <p style="margin-top:3px;font-size: 12px;margin-top: 5px;color: #666;">
+                                            米粉米线&nbsp;
+                                            <span style="border:1px solid #ccc;font-size: 11px;color: #666;">支持自取</span>
+                                            &nbsp;品质联盟
+                                        </p>
+                
+                                        <p style="height:0.4%;width:98%;background:#ddd;margin:10px auto 0 auto;;"></p>
+                
+                                        <div>
+                                                <details>     
+                                                        <summary style="font-size:12px;float: right">5个活动</summary>
+                                                    <p style="font-size:11px;color: #444">
+                                                        <span  style="color:white;background:green;font-size:12px;">首</span>
+                                                        &nbsp;&nbsp;新用户下单立减一元
+                                                        </p>
+                                                    <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:#5fe;;font-size:12px;">减</span>
+                                                            &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                    </p>
+                                                    <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:rgb(18, 33, 240);;font-size:12px;">特</span>
+                                                            &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                    </p>
+                                                    <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:rgb(238, 11, 136);;font-size:12px;">折</span>
+                                                            &nbsp;&nbsp;折扣商品8折起
+                                                    </p>
+                                                    <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:rgb(42, 43, 42);;font-size:12px;">票</span>
+                                                            &nbsp;&nbsp;该商家支持开发票
+                                                    </p>
+                                                </details> 
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div style="width:100%;height:1px;background:#ddd;margin:3px 0 8px 0;"></div>
+                            
+                                <div style="width:93%;height:178px;margin:0 auto;">
+                                        <div style="float:left;width:20%">
+                                            <img style="width:100%;height:65px;" src="img/3-2.png" alt="">
+                                        </div>
+                                        <div style="width:75%;height:100%;float:right">
+                                            <span style="color: #bbb; position: relative;top:-2px;font-size:12px;background:yellow;color: darkred;font-weight:900;">品牌</span>
+                                            <span style="font-weight:900;">肯德基宅急送(宜丰店)</span>
+                                            <span style="float:right">···</span>
+                    
+                                            <p style="margin-top:3px;">
+                                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjUwJSIgeTI9IjUwJSIgaWQ9ImEiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkRFMDAiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjRkZCMDAwIiBvZmZzZXQ9IjEwMCUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJNNTQuMDE3IDguMDcybC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w1My42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bS00OCAwTDMuNDY1IDkuNjMzYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDUuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMEw3LjU1IDMuMzUybDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2TDguNDk3IDYuMjY5bC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bTEyIDBsLTIuNTUyIDEuNTYxYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDE3LjYzLjU4OWMuMjEzLS41MTUuNTU3LS41MjMuNzc0IDBsMS4xNDYgMi43NjMgMi45ODIuMjM3Yy41NTYuMDQ0LjY3LjM2OC4yNC43MzZsLTIuMjc0IDEuOTQ0LjY5NiAyLjkxYy4xMy41NDItLjE0My43NS0uNjI2LjQ1NGwtMi41NTEtMS41NnptMTIgMGwtMi41NTIgMS41NjFjLS40NzYuMjkxLS43NTguMDk2LS42MjYtLjQ1NWwuNjk2LTIuOTA5LTIuMjczLTEuOTQ0Yy0uNDI0LS4zNjItLjMyNS0uNjkxLjIzOS0uNzM2bDIuOTgyLS4yMzdMMjkuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMGwxLjE0NiAyLjc2MyAyLjk4Mi4yMzdjLjU1Ni4wNDQuNjcuMzY4LjI0LjczNmwtMi4yNzQgMS45NDQuNjk2IDIuOTFjLjEzLjU0Mi0uMTQzLjc1LS42MjYuNDU0bC0yLjU1MS0xLjU2em0xMiAwbC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w0MS42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6IiBmaWxsPSJ1cmwoI2EpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" alt="">
+                                                <span style="font-size:12px;color: #bbb;">4.8&nbsp;&nbsp;月售552单</span>
+                                                <span style="background:#0af;float:right;font-size: 12px;">蜂鸟专送</span>
+                                            </p>
+                    
+                                            <p style="margin-top:3px;">
+                                                <span style="font-size:12px;color: #666;">￥20起送&nbsp;&nbsp;|&nbsp;&nbsp;配送费￥4</span>
+                                                <span style="font-size:12px;float: right;color: #666;">2.72km|30分钟</span>
+                                            </p>
+                    
+                                            <p style="margin-top:3px;font-size: 12px;margin-top: 5px;color: #666;">
+                                                米粉米线&nbsp;
+                                                <span style="border:1px solid #ccc;font-size: 11px;color: #666;">支持自取</span>
+                                                &nbsp;品质联盟
+                                            </p>
+                    
+                                            <p style="height:0.4%;width:98%;background:#ddd;margin:10px auto 0 auto;;"></p>
+                    
+                                            <div>
+                                                    <details>     
+                                                            <summary style="font-size:12px;float: right">5个活动</summary>
+                                                        <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:green;font-size:12px;">首</span>
+                                                            &nbsp;&nbsp;新用户下单立减一元
+                                                            </p>
+                                                        <p style="font-size:11px;color: #444">
+                                                                <span  style="color:white;background:#5fe;;font-size:12px;">减</span>
+                                                                &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                        </p>
+                                                        <p style="font-size:11px;color: #444">
+                                                                <span  style="color:white;background:rgb(18, 33, 240);;font-size:12px;">特</span>
+                                                                &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                        </p>
+                                                        <p style="font-size:11px;color: #444">
+                                                                <span  style="color:white;background:rgb(238, 11, 136);;font-size:12px;">折</span>
+                                                                &nbsp;&nbsp;折扣商品8折起
+                                                        </p>
+                                                        <p style="font-size:11px;color: #444">
+                                                                <span  style="color:white;background:rgb(42, 43, 42);;font-size:12px;">票</span>
+                                                                &nbsp;&nbsp;该商家支持开发票
+                                                        </p>
+                                                    </details> 
+                                            </div>
+                                        </div>
+                                </div>
+                
+                                <div style="width:100%;height:1px;background:#ddd;margin:3px 0 8px 0;"></div>
+                
+                                <div style="width:93%;height:178px;margin:0 auto;">
+                                        <div style="float:left;width:20%">
+                                            <img style="width:100%;height:65px;" src="img/3-3.jpeg" alt="">
+                                        </div>
+                                        <div style="width:75%;height:100%;float:right">
+                                            <span style="color: #bbb; position: relative;top:-2px;font-size:12px;background:yellow;color: darkred;font-weight:900;">品牌</span>
+                                            <span style="font-weight:900;">稻香小店(新尝试花园店)</span>
+                                            <span style="float:right">···</span>
+                    
+                                            <p style="margin-top:3px;">
+                                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iMTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjUwJSIgeTI9IjUwJSIgaWQ9ImEiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkRFMDAiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjRkZCMDAwIiBvZmZzZXQ9IjEwMCUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJNNTQuMDE3IDguMDcybC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w1My42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bS00OCAwTDMuNDY1IDkuNjMzYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDUuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMEw3LjU1IDMuMzUybDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2TDguNDk3IDYuMjY5bC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6bTEyIDBsLTIuNTUyIDEuNTYxYy0uNDc2LjI5MS0uNzU4LjA5Ni0uNjI2LS40NTVsLjY5Ni0yLjkwOS0yLjI3My0xLjk0NGMtLjQyNC0uMzYyLS4zMjUtLjY5MS4yMzktLjczNmwyLjk4Mi0uMjM3TDE3LjYzLjU4OWMuMjEzLS41MTUuNTU3LS41MjMuNzc0IDBsMS4xNDYgMi43NjMgMi45ODIuMjM3Yy41NTYuMDQ0LjY3LjM2OC4yNC43MzZsLTIuMjc0IDEuOTQ0LjY5NiAyLjkxYy4xMy41NDItLjE0My43NS0uNjI2LjQ1NGwtMi41NTEtMS41NnptMTIgMGwtMi41NTIgMS41NjFjLS40NzYuMjkxLS43NTguMDk2LS42MjYtLjQ1NWwuNjk2LTIuOTA5LTIuMjczLTEuOTQ0Yy0uNDI0LS4zNjItLjMyNS0uNjkxLjIzOS0uNzM2bDIuOTgyLS4yMzdMMjkuNjMuNTg5Yy4yMTMtLjUxNS41NTctLjUyMy43NzQgMGwxLjE0NiAyLjc2MyAyLjk4Mi4yMzdjLjU1Ni4wNDQuNjcuMzY4LjI0LjczNmwtMi4yNzQgMS45NDQuNjk2IDIuOTFjLjEzLjU0Mi0uMTQzLjc1LS42MjYuNDU0bC0yLjU1MS0xLjU2em0xMiAwbC0yLjU1MiAxLjU2MWMtLjQ3Ni4yOTEtLjc1OC4wOTYtLjYyNi0uNDU1bC42OTYtMi45MDktMi4yNzMtMS45NDRjLS40MjQtLjM2Mi0uMzI1LS42OTEuMjM5LS43MzZsMi45ODItLjIzN0w0MS42My41ODljLjIxMy0uNTE1LjU1Ny0uNTIzLjc3NCAwbDEuMTQ2IDIuNzYzIDIuOTgyLjIzN2MuNTU2LjA0NC42Ny4zNjguMjQuNzM2bC0yLjI3NCAxLjk0NC42OTYgMi45MWMuMTMuNTQyLS4xNDMuNzUtLjYyNi40NTRsLTIuNTUxLTEuNTZ6IiBmaWxsPSJ1cmwoI2EpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" alt="">
+                                                <span style="font-size:12px;color: #bbb;">4.8&nbsp;&nbsp;月售552单</span>
+                                                <span style="background:#0af;float:right;font-size: 12px;">蜂鸟专送</span>
+                                            </p>
+                    
+                                            <p style="margin-top:3px;">
+                                                <span style="font-size:12px;color: #666;">￥20起送&nbsp;&nbsp;|&nbsp;&nbsp;配送费￥4</span>
+                                                <span style="font-size:12px;float: right;color: #666;">2.72km|30分钟</span>
+                                            </p>
+                    
+                                            <p style="margin-top:3px;font-size: 12px;margin-top: 5px;color: #666;">
+                                                米粉米线&nbsp;
+                                                <span style="border:1px solid #ccc;font-size: 11px;color: #666;">支持自取</span>
+                                                &nbsp;品质联盟
+                                            </p>
+                    
+                                            <p style="height:0.4%;width:98%;background:#ddd;margin:10px auto 0 auto;;"></p>
+                    
+                                            <div>
+                                                    <details>     
+                                                            <summary style="font-size:12px;float: right">5个活动</summary>
+                                                        <p style="font-size:11px;color: #444">
+                                                            <span  style="color:white;background:green;font-size:12px;">首</span>
+                                                            &nbsp;&nbsp;新用户下单立减一元
+                                                            </p>
+                                                        <p style="font-size:11px;color: #444">
+                                                                <span  style="color:white;background:#5fe;;font-size:12px;">减</span>
+                                                                &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                        </p>
+                                                        <p style="font-size:11px;color: #444">
+                                                                <span  style="color:white;background:rgb(18, 33, 240);;font-size:12px;">特</span>
+                                                                &nbsp;&nbsp;满20减5，满40减8，满65减12
+                                                        </p>
+                                                        <p style="font-size:11px;color: #444">
+                                                                <span  style="color:white;background:rgb(238, 11, 136);;font-size:12px;">折</span>
+                                                                &nbsp;&nbsp;折扣商品8折起
+                                                        </p>
+                                                        <p style="font-size:11px;color: #444">
+                                                                <span  style="color:white;background:rgb(42, 43, 42);;font-size:12px;">票</span>
+                                                                &nbsp;&nbsp;该商家支持开发票
+                                                        </p>
+                                                    </details> 
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+            </div>
+        </div>
+       <div class="yq_footer">
+            <div style="text-align:center;width:22%">
+                <img style="width:18px;height:18px;" src="img/shouye.png" alt="">
+                <p>首页</p>
+            </div>
+            <div style="text-align:center;width:22%">
+                    <img style="width:18px;height:18px;" src="img/daxian.png" alt="">
+                    <a href="faxian1.html" target="_self" style="text-decoration:none;color:#aaa"><p>发现</p></a>
+            </div>
+            <div style="text-align:center;width:22%">
+                    <img style="width:18px;height:18px;" src="img/dingdan.png" alt="">
+                    <a href="dingdan.html" target="_self" style="text-decoration: none;color:#aaa"><p>订单</p></a>
+            </div>
+            <div style="text-align:center;width:22%">
+                    <img style="width:18px;height:18px;" src="img/wode.png" alt="">
+                   <!-- <a href="elm.html"  target="_self" style="text-decoration:none;color:#aaa"></a><p>我的</p></a>  -->
+                   <p class="wode">我的</p>
+            </div>
+       </div>
+
+       <script src="js/swiper.js"></script>
+       <script src="js/iscroll.js"></script>
+       <script>
+
+           var xxk = document.getElementsByClassName('xuanxiangka')
+           var paixu = document.getElementsByClassName("paixu")
+           var yq_main_xuan = document.getElementsByClassName('yq_main_xuan')[0]
+           var wode = document.getElementsByClassName('wode')[0]
+           var yq_a = 0
+           for(let i =0;i<xxk.length;i++){
+               xxk[i].onclick = function(){
+                   xxk[yq_a].style.color = "#bbb"
+                   paixu[yq_a].style.display = "none"
+                   xxk[i].style.color = "black"
+                   paixu[i].style.display = "block"
+                    yq_a = i
+               }
+           }
+
+           window.onscroll = function(){
+               if(window.scrollY>290){
+                   yq_main_xuan.className="beiyong"
+               }else{
+                yq_main_xuan.className="yq_main_xuan"
+               }
+           }
+
+
+             var mySwiper = new Swiper('.swiper-container', {
+               
+            autoplay: 2000
+        });
+
+        
+        wode.onclick=function(){
+            var arr = document.cookie.split(";")
+            for(i=0;i<arr.length;i++){
+                arr[i]= arr[i].split("=") 
+                 arr[i][0]=arr[i][0].trim()
+                 if(arr[i][0]!=""){
+                   location.href="elmlogin.html" 
+                 }else{
+                    location.href="elm.html" 
+                 }
+             }
+             
+        } 
+      
+       </script>
+</body>
+</html>

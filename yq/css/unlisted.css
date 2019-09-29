@@ -1,0 +1,96 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /* border: 1px solid red; */
+        overflow: hidden;
+    }
+    .address{
+        width: 100%;
+        height: 50px;
+        background: #008FFF;
+        position: fixed;
+    }
+    .address .myad{
+        line-height: 50px;
+        text-align: center;
+        position: relative;
+    }
+    .address .myad i{
+        font-size: 25px;
+        color: #fff;
+        position: absolute;
+        left: 15px;
+        margin-top: 12px;
+    }
+    .address .myad span{
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+    }
+    .add{
+        width: 100%;
+        height: 60px;
+        background: rgb(156, 155, 155);
+        position: absolute;
+        border: 1px solid #494949;
+        bottom: 0px;
+        opacity: 0.5;
+    }
+    .add .myad{
+        line-height: 60px;
+        text-align: center;
+    }
+    .add .myad img{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 3px;
+    }
+    .add .myad span{
+        font-size: 17px;
+        color: #47739c;
+    }
+    .mui-backdrop {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background-color: rgba(0,0,0,.7);
+    }
+    .no{
+        width: 80%;
+        height: 120px;
+        background: #fff;
+       margin-top: 250px;
+       margin-left: 10%;
+       position: relative;
+    }
+    .nu{
+        font-size: 20px;
+        font-weight: bolder;
+        margin-left: 40%;
+        position: absolute;
+        margin-top: 20px;
+    }
+    .leave{
+        width: 70%;
+        height: 40px;
+        position: absolute;
+        bottom: 20px;
+        margin-left: 15%;
+        border: none;
+        background: #008FFF;
+    }
+    .leave span{
+        font-size: 17px;
+        color: #fff;
+    }

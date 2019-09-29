@@ -1,0 +1,242 @@
+    .evaluate{
+        width: 100%;
+        height: 100px;
+        background: #fff;
+    }
+    /* 左 */
+    .appraise{
+        width: 70%;
+        height: 60px;
+        border-right: 1px solid #F4F4F4;
+        margin-top: 20px;
+        margin-left: 20px;
+        /* position: absolute; */
+        float: left;
+    }
+    .appraise ul:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .appraise ul li{
+          list-style: none;
+          float: left;
+    } 
+    .app-num{
+        font-size: 35px;
+        font-weight: 500;
+        color: #FF6000;
+        margin-top: 25px;
+    }
+    .app-shop{
+        font-size: 12px;
+        color: #666666;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    .xx img{
+        width: 12px;
+        height: 12px;
+        position: relative;
+        left: 15px;
+    }
+    .smell .sm{
+        font-size: 12px;
+        color: #666666;
+        margin-top: 10px;
+        margin-left: 35px;
+    }
+    .smell .smell-num{
+        font-size: 20px;
+        color: #666666;
+        margin-top: 2px;
+        margin-left: 32px;
+    }
+    /* 右 */
+    .app-r{
+        width: 20%;
+        height: 60px;
+        /* border: 1px solid darkblue; */
+        margin-top: 20px;
+        float: right;
+    }
+    .app-r ul:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .app-r ul li{
+        list-style: none;
+        float: left;
+    } 
+    .app-r ul .smell .sm{
+        font-size: 12px;
+        color: #666666;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    .app-r ul .smell .smell-num{
+        font-size: 20px;
+        color: #666666;
+        margin-top: 2px;
+        margin-left: 12px;
+    }
+    .all{
+        width: 100%;
+        height: 90px;
+        background: #fff;
+        margin-top: 10px;
+    }
+    .all button{
+        width: 60px;
+        height: 25px;
+        border: none;
+        margin-top: 13px;
+        margin-left: 9px;
+        color: #6D7885;
+        font-size: 12px;
+        background: #EBF5FF;
+        outline: none;
+        padding: 0px;
+    }
+    .content{
+        width: 100%;
+        height: 45px;
+        background: #fff;
+    }
+    .content .content-box{
+        width: 90%;
+        height: 45px;
+        margin-left: 19px; 
+        border-top: 1px solid #F8F8F8;
+        border-bottom: 1px solid #F8F8F8;
+    }
+   .con img{
+        margin-top: 15px;
+        width: 12px;
+        height: 12px;
+   }
+   .con span{
+        color: #666666;
+   }
+   /* <!-- 内容评价 --> */
+    .matter{
+        width: 100%;
+        height: 1000px;
+        /* background: #FF6000; */
+    }
+    .matter .ma-one{
+        width: 100%;
+        height: 400px;
+        background: #fff;
+    }
+    .ma-one ul:after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+    .ma-one ul li{
+        list-style: none;
+        float: left;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .ma-one ul li .tx img{
+        width: 45px;
+        height: 45px;
+        background: darkgreen;
+        border-radius: 100%;
+    }
+    .xxx img{
+        width: 12px;
+        height: 12px;
+    }
+    .shop-r{
+        width: 80%;
+        height: 60px;
+        background: #F3F3F3;
+        margin-left: 60px;
+        margin-top: 5px;
+    }
+    .shop-r p{
+        font-size: 13px;
+        color: #333333;
+    }
+    .zan{
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+ 
+    .zan button{
+        width: 50px;
+        height: 25px;
+        border: none;
+        margin-top: 2px;
+        margin-left: 9px;
+        color: #6D7885;
+        font-size: 12px;
+        background: #EBF5FF;
+        padding: 0px;
+    }
+    /* 商家 */
+    .infor{
+        height: 120px;
+        width: 100%;
+        background: #fff;
+    }
+    .serve{
+        height: 150px;
+        width: 100%;
+        background: #fff;
+        margin-top: 10px;
+    }
+    .serve ul li .pei{
+        width: 25px;
+        height: 20px;
+        border: 1px solid #ACACAC;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+ 
+    .serve ul li{
+        list-style: none;
+    }
+    .serve ul li::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .serve ul li .pei p{
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+        color: #ACACAC;
+        position: relative;
+    }
+    .serve ul li .acti{
+        margin-left: 60px;
+        position: relative;
+        bottom: 22px;
+        font-size: 14px;
+        color: #666666;
+    }
+    /* 商家实景 */
+    .live{
+        height: 150px;
+        width: 100%;
+        background: #fff;
+        margin-top: 10px;
+    }
+    .live img{
+        width: 80px;
+        height: 80px;
+          margin-top: 30px;
+          margin-left: 20px;
+    }
+    /* <!-- 营业资质 --> */
+    .bus{
+        height: 60px;
+        width: 100%;
+        background: #fff;
+        margin-top: 10px;
+    }

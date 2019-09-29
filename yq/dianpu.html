@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/dianpu.css">
+    <link rel="stylesheet" href="css/mui.min.css">
+    <style>
+        *{padding: 0;margin: 0;}
+        .yq_top{width: 100%;height: 110px;text-align: center;position: relative;}
+        .yq_top img:first-child{width:100%;height: 100%;opacity: 0.5;}
+        .xkaer{display: flex;justify-content: space-around;width:100%;height: 40px;}
+        .xkaer p{font-weight: 900;color: #bbb;font-size:15px;height: 40px;
+            line-height: 40px;width:20%;text-align: center;}
+        .xkaer p:first-of-type{color: black;border-bottom: 2px #0af solid;}
+        .xkaer p:hover{cursor: pointer;color: #0af;}
+
+        .qiehuaner{display: none;}
+        .lll{display: block;}
+
+        .shipin a{width:100%;text-align: center;font-size: 13px;height:50px;line-height: 50px;
+                text-decoration: none;color: #aaa;display: block;border-bottom: 1px #ccc solid;}
+        
+        
+        .jia{display:inline-block;width:20px;height:20px;border-radius: 50%;color:white;
+            ;border:none;background: #0af;font-size: 18px;text-align: center;font-weight: 1000;}
+        .jian6{display:inline-block;width:20px;height:20px;border-radius: 50%;color:#0af;
+            ;border:1px #0af solid;background: white;font-size: 18px;text-align: center;font-weight: 1000;}
+        .jiesuan{background:rgba(100, 100, 100, 0.5);width:30%;text-align: center;height: 40px;line-height: 40px;font-size:23px;font-weight: 1000;}
+        .aaa{color: white;}
+
+        .yidian2{display: inline-block;width: 100%;height: 50px;line-height: 50px;border-bottom: 1px solid #ccc;color: #fff;font-weight: 1000;text-align: center}
+    </style>
+</head>
+<body>
+
+
+    <!-- shang -->
+    <div class="yq_top">
+        <img src="img/dianpu.png" alt="">
+        <img style="width:20%;height:60%;position: absolute;top:60%;left: 40%;" src="img/diantouxiang.jpeg" alt="">
+        <a  href="index.html" target="_self"><span style="font-size:25px;position:absolute;left:2px;top:2px;font-weight:1000;color:#000;background:rgba(255, 255, 255, 0.1)">&lt;</span></a>
+    </div>
+    <p style="text-align:center;width:100%;margin-top:9%;font-size:19px;font-weight:900;">多纳贝甜烘焙工坊</p>
+    <p style="text-align:center;width:100%;font-size:12px;margin-top: 6px;;">评价4.6&nbsp;&nbsp;月售261单;&nbsp;&nbsp;商家配送约35分钟</p>
+    <div style="text-align:center;width:100%;">
+        <img style="margin:5px auto;width:40%" src="img/yuouhuijuan.png" alt="">
+    </div>
+    <div style="text-align:center;width:100%;">
+        <span style="font-size:12px;color:red;border:1px solid red;">&nbsp;&nbsp;50减7&nbsp;&nbsp;</span>
+        <span style="font-size:12px;color:red;border:1px solid red;">&nbsp;&nbsp;80减13&nbsp;&nbsp;</span>
+        <span style="font-size:12px;color:red;border:1px solid red;">&nbsp;&nbsp;120减28&nbsp;&nbsp;</span>
+        <span style="font-size:12px;color:red;border:1px solid red;">&nbsp;&nbsp;260减50&nbsp;&nbsp;</span>
+    </div>
+    <p style="text-align:center;width:100%;font-size:11px;color: #888;margin-top: 10px;;">公告：欢迎光临，用餐高峰期请提前下单，谢谢。</p>
+    <!-- 上 end-------- -->
+    
+    
+    
+    
+    
+    <div class="xkaer">
+        <p class="qiehuanyi">点餐</p>
+        <p class="qiehuanyi">评价</p>
+        <p class="qiehuanyi">商家</p>
+    </div>
+
+    <!-- 点餐选项卡 -->
+    <div class="qiehuaner lll" style="width:100%;position: relative;background: white;">
+        <div class="shipin" style="width:20%;float: left;position: absolute;top: 0;overflow-y: auto;">
+            <a style="color:#000;font-weight: 1000;border-bottom: 4px #aaa solid"  class="yh" href="#rexiao">🔺热销</a>
+            <a class="yh" href="#youhui">★优惠</a>
+            <a class="yh" href="#">中秋月饼</a>
+            <a class="yh" href="#">温馨提示</a>
+            <a class="yh" href="#">时尚饮品</a>
+            <a class="yh" href="#">现烤面包</a>
+            <a  class="yh" href="#">吐司切片</a>
+            <a  class="yh" href="#">饮品小吃</a>
+        </div>
+
+        <div style="width:75%;float:right;height: 500px;overflow-y: auto;">
+
+            <span id="rexiao" style="font-weight:1000;color: #555;font-size:13px;">热销</span>&nbsp;&nbsp;<span style="color:#999;font-size:12px;">大家喜欢吃，才叫真好吃</span>
+            <div style="width:100%;margin-top: 10px;display: flex;justify-content:space-around;">
+                    <img style="width:32%;height:95px;" src="img/100.png" alt="">
+                    <div style="width:62%;height:95px;;">
+                            <p class="caiming" style="font-weight:1000">葡萄式蛋挞</p>
+                            <p style="font-size:12px;color:#aaa;margin-top:4px;">月售97份&nbsp;&nbsp;好评率90%</p>
+                            <div style="width:100%;margin-top: 13%;">
+                                <span style="color:red;font-size:19px;">￥<span class="danjia">3</span></span>
+                                <div style="width:70px;text-align:center;height:40px;float:right;">
+                                    <span class="jian6">-</span>
+                                <span class="shuliang">0</span>  
+                                <span class="jia">+</span>
+                                </div>
+                            </div>
+                            <div style="display:none;" class="xiaoji"></div>
+                    </div>
+            </div>
+
+            <div style="width:100%;margin-top: 10px;display: flex;justify-content:space-around;">
+                    <img style="width:32%;height:95px;" src="img/110.jpeg" alt="">
+                    <div style="width:62%;height:95px;;">
+                            <p  class="caiming style="font-weight:1000">法式脆皮泡芙</p>
+                            <p style="font-size:12px;color:#aaa;margin-top:4px;">月售97份&nbsp;&nbsp;好评率90%</p>
+                            <div style="width:100%;margin-top: 13%;">
+                                <span style="color:red;font-size:19px;">￥<span class="danjia">4</span></span>
+                                <div style="width:70px;text-align:center;;height:30px;float:right;">
+                                    <span class="jian6">-</span>
+                                <span class="shuliang">0</span>  
+                                <span class="jia">+</span>
+                                </div>
+                            </div>
+                            <div style="display:none;" class="xiaoji"></div>
+                    </div>
+            </div>
+
+            <div style="width:100%;margin-top: 10px;display: flex;justify-content:space-around;">
+                    <img style="width:32%;height:95px;" src="img/111.jpeg" alt="">
+                    <div style="width:62%;height:95px;;">
+                            <p  class="caiming style="font-weight:1000">鸡蛋火腿三明治</p>
+                            <p style="font-size:12px;color:#aaa;margin-top:4px;">月售97份&nbsp;&nbsp;好评率90%</p>
+                            <div style="width:100%;margin-top: 13%;">
+                                <span style="color:red;font-size:19px;">￥<span class="danjia">6</span></span>
+                                <div style="width:70px;text-align:center;height:30px;float:right;">
+                                    <span class="jian6">-</span>
+                                <span class="shuliang">0</span>  
+                                <span class="jia">+</span>
+                                </div>
+                            </div>
+                            <div style="display:none;" class="xiaoji"></div>
+                    </div>
+            </div>
+
+            <div style="width:100%;margin-top: 10px;display: flex;justify-content:space-around;">
+                    <img style="width:32%;height:95px;" src="img/113.jpeg" alt="">
+                    <div style="width:62%;height:95px;;">
+                            <p class="caiming" style="font-weight:1000">岩烧乳酪</p>
+                            <p style="font-size:12px;color:#aaa;margin-top:4px;">月售97份&nbsp;&nbsp;好评率90%</p>
+                            <div style="width:100%;margin-top: 13%;">
+                                <span style="color:red;font-size:19px;">￥<span class="danjia">6</span></span>
+                                <div style="width:70px;text-align:center;height:30px;float:right;">
+                                    <span class="jian6">-</span>
+                                <span class="shuliang">0</span>  
+                                <span class="jia">+</span>
+                                </div>
+                            </div>
+                            <div style="display:none;" class="xiaoji"></div>
+                    </div>
+            </div>
+
+            <div style="width:100%;margin-top: 10px;display: flex;justify-content:space-around;">
+                    <img style="width:32%;height:95px;" src="img/114.jpeg" alt="">
+                    <div style="width:62%;height:95px;;">
+                            <p class="caiming"style="font-weight:1000">雪媚娘</p>
+                            <p style="font-size:12px;color:#aaa;margin-top:4px;">月售97份&nbsp;&nbsp;好评率90%</p>
+                            <div style="width:100%;margin-top: 13%;">
+                                <span style="color:red;font-size:19px;">￥<span class="danjia">5</span></span>
+                                <div style="width:70px;text-align:center;height:30px;float:right;">
+                                    <span class="jian6">-</span>
+                                <span class="shuliang">0</span>  
+                                <span class="jia">+</span>
+                                </div>
+                            </div>
+                            <div style="display:none;" class="xiaoji"></div>
+                    </div>
+            </div>
+            <br>
+            <span id="youhui" style="font-weight:1000;color: #555;font-size:13px;margin-top: 10px;">优惠</span>
+            <div style="width:100%;margin-top: 10px;display: flex;justify-content:space-around;">
+                    <img style="width:32%;height:95px;" src="img/116.jpeg" alt="">
+                    <div style="width:62%;height:95px;;">
+                            <p class="caiming" style="font-weight:1000">酸奶水果捞</p>
+                            <p style="font-size:12px;color:#aaa;margin-top:4px;">月售97份&nbsp;&nbsp;好评率90%</p>
+                            <div style="width:100%;margin-top: 13%;">
+                                <span style="color:red;font-size:19px;">￥<span class="danjia">5</span></span>
+                                <div style="width:70px;text-align:center;height:30px;float:right;">
+                                    <span class="jian6">-</span>
+                                <span class="shuliang">0</span>  
+                                <span class="jia">+</span>
+                                </div>
+                            </div>
+                            <div style="display:none;" class="xiaoji"></div>
+                    </div>
+            </div>
+            <div style="width:100%;margin-top: 10px;display: flex;justify-content:space-around;">
+                    <img style="width:32%;height:95px;" src="img/117.jpeg" alt="">
+                    <div style="width:62%;height:95px;;">
+                            <p class="caiming" style="font-weight:1000">糯米老婆饼</p>
+                            <p style="font-size:12px;color:#aaa;margin-top:4px;">月售97份&nbsp;&nbsp;好评率90%</p>
+                            <div style="width:100%;margin-top: 13%;">
+                                <span style="color:red;font-size:19px;">￥<span class="danjia">7</span></span>
+                                <div style="width:70px;text-align:center;height:30px;float:right;">
+                                    <span class="jian6">-</span>
+                                <span class="shuliang">0</span>  
+                                <span class="jia">+</span>
+                                </div>
+                            </div>
+                            <div style="display:none;" class="xiaoji"></div>
+                    </div>
+            </div>
+            <div style="width:100%;margin-top: 10px;display: flex;justify-content:space-around;">
+                    <img style="width:32%;height:95px;" src="img/118.jpeg" alt="">
+                    <div style="width:62%;height:95px;;">
+                            <p class="caiming" style="font-weight:1000">方形红丝绒裸蛋糕</p>
+                            <p style="font-size:12px;color:#aaa;margin-top:4px;">月售97份&nbsp;&nbsp;好评率90%</p>
+                            <div style="width:100%;margin-top: 13%;">
+                                <span style="color:red;font-size:19px;">￥<span class="danjia">11</span></span>
+                                <div style="width:70px;text-align:center;;height:30px;float:right;">
+                                    <span class="jian6">-</span>
+                                <span class="shuliang">0</span>  
+                                <span class="jia">+</span>
+                                </div>
+                            </div>
+                            <div style="display:none;" class="xiaoji"></div>
+                    </div>
+            </div>
+            <div style="width:100%;margin-top: 10px;display: flex;justify-content:space-around;">
+                    <img style="width:32%;height:95px;" src="img/100.png" alt="">
+                    <div style="width:62%;height:95px;;">
+                            <p class="caiming" style="font-weight:1000">四季恋歌</p>
+                            <p style="font-size:12px;color:#aaa;margin-top:4px;">月售97份&nbsp;&nbsp;好评率90%</p>
+                            <div style="width:100%;margin-top: 13%;">
+                                <span style="color:red;font-size:19px;">￥<span class="danjia">5</span></span>
+                                <div style="width:70px;text-align:center;height:30px;float:right;">
+                                    <span class="jian6">-</span>
+                                <span class="shuliang">0</span>  
+                                <span class="jia">+</span>
+                                </div>
+                            </div>
+                            <div style="display:none;" class="xiaoji"></div>
+                    </div> 
+            </div>
+            <div style="width:100%;margin-top: 10px;display: flex;justify-content:space-around;">
+                    <img style="width:32%;height:95px;" src="img/100.png" alt="">
+                    <div style="width:62%;height:95px;;">
+                            <p class="caiming" style="font-weight:1000">爱的旋律</p>
+                            <p style="font-size:12px;color:#aaa;margin-top:4px;">月售97份&nbsp;&nbsp;好评率90%</p>
+                            <div style="width:100%;margin-top: 13%;">
+                                <span style="color:red;font-size:19px;">￥<span class="danjia">5</span></span>
+                                <div style="width:70px;text-align:center;height:30px;float:right;">
+                                    <span class="jian6">-</span>
+                                <span class="shuliang">0</span>  
+                                <span class="jia">+</span>
+                                </div>
+                            </div>
+                            <div style="display:none;" class="xiaoji"></div>
+                    </div>
+            </div>
+            <div style="width:100%;margin-top: 10px;display: flex;justify-content:space-around;">
+                    <img style="width:32%;height:95px;" src="img/100.png" alt="">
+                    <div style="width:62%;height:95px;;">
+                            <p class="caiming" style="font-weight:1000">香颂八仁</p>
+                            <p style="font-size:12px;color:#aaa;margin-top:4px;">月售97份&nbsp;&nbsp;好评率90%</p>
+                            <div style="width:100%;margin-top: 13%;">
+                                <span style="color:red;font-size:19px;">￥<span class="danjia">5</span></span>
+                                <div style="width:70px;text-align:center;height:30px;float:right;">
+                                    <span class="jian6">-</span>
+                                <span class="shuliang">0</span>  
+                                <span class="jia">+</span>
+                                </div>
+                            </div>
+                            <div style="display:none;" class="xiaoji"></div>
+                    </div>
+            </div>
+        
+        </div>
+    </div>
+
+
+    <!-- 评价选项卡 -->
+    <div class="qiehuaner" style="width:100%;height:1000px;">
+            <!-- 评价 -->
+            <div class="evaluate ">
+                <!-- 左 -->
+                <div class="appraise">
+                    <ul>
+                        <li class="app-num">4.6</li>
+                        <li>
+                            <p class="app-shop">商家评分</p>
+                            <p class="xx">
+                                <img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/bx.png" alt="">
+                            </p>
+                        </li>
+                        <li class="smell">
+                            <p class="sm">味道</p>
+                            <p class="smell-num">4.6</p>
+                        </li>
+                        <li class="smell">
+                            <p class="sm">包装</p>
+                            <p class="smell-num">4.7</p>
+                        </li>
+                </ul> 
+                </div>
+                <!-- 右 -->
+                <div class="app-r">
+                    <ul>
+                        <li class="smell">
+                            <p class="sm">配送</p>
+                            <p class="smell-num">4.8</p>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+            <!-- 全部     -->
+            <div class="all">
+            <button  class="btn "  style="  background: #0af;color: #fff; font-size: 12px;">全部1200</button>
+            <button  class="btn " >最新</button>
+            <button  class="btn "  >好评50</button>
+            <button   class="btn " >评差20</button>
+            <button  class="btn ">有图</button>
+            <button  class="btn ">味道好</button>
+            </div>
+            <!-- 只看有内容的评价 -->
+            <div class="content"> 
+                <div class="content-box">
+                <p class="con">
+                    <img src="img/green.png" alt="">
+                    <span>只看有评价的内容</span>
+                </p>
+                </div>
+            </div>
+            <!-- 内容评价1 -->
+            <div  class="matter" >
+                <!-- 第一个 -->
+                <div class="ma-one">
+                <ul>
+                    <li>
+                        <div class="tx">
+                            <img src="img/tx1.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <p >菲*****A</p>
+                        <p class="xxx">
+                            <img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt="">
+                            <span style="font-size: 12px;color:#FF6000;">超赞</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                    </li>
+                </ul>
+                <p style="margin-left: 60px;">
+                    超级棒，  超级棒，  超级棒，  超级棒，  超级棒。 
+                </p>
+                <div class="shop-r">
+                    <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                </div>
+                <img style="width: 100px;height:100px;margin-left: 60px;margin-top: 10px;" src="img/114.jpeg" alt="">
+                    <p class="zan">
+                    <img src="img/zan.png" alt="">
+                    <button>高纤奶酪</button>
+                    <button>高纤奶酪</button>
+                    <button>高纤奶酪</button>
+                    <button>高纤奶酪</button>
+                    <button>高纤奶酪</button>
+                </p>  
+                    <hr style="width: 90%; background:#F7F7F7;margin-left: 15px;margin-top: 15px;">
+                </div>
+                <!-- 第二个 -->
+                <div class="ma-one">
+                    <ul>
+                        <li>
+                            <div class="tx">
+                                <img src="img/tx1.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <p >菲*****A</p>
+                            <p class="xxx">
+                                <img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt="">
+                                <span style="font-size: 12px;color:#FF6000;">超赞</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                        </li>
+                    </ul>
+                    <p style="margin-left: 60px;">
+                        超级棒，  超级棒，  超级棒，  超级棒，  超级棒。 
+                    </p>
+                    <div class="shop-r">
+                        <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                    </div>
+                    <img style="width: 100px;height:100px;margin-left: 60px;margin-top: 10px;" src="img/114.jpeg" alt="">
+                        <p class="zan">
+                        <img src="img/zan.png" alt="">
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                    </p>  
+                    <hr style="width: 90%;color:#F7F7F7;margin-left: 15px;margin-top: 15px;">
+                </div>
+                <!-- 第三个 -->
+                <div class="ma-one">
+                    <ul>
+                        <li>
+                            <div class="tx">
+                                <img src="img/tx1.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <p >菲*****A</p>
+                            <p class="xxx">
+                                <img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt="">
+                                <span style="font-size: 12px;color:#FF6000;">超赞</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                        </li>
+                    </ul>
+                    <p style="margin-left: 60px;">
+                        超级棒，  超级棒，  超级棒，  超级棒，  超级棒。 
+                    </p>
+                    <div class="shop-r">
+                        <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                    </div>
+                    <img style="width: 100px;height:100px;margin-left: 60px;margin-top: 10px;" src="img/114.jpeg" alt="">
+                        <p class="zan">
+                        <img src="img/zan.png" alt="">
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                    </p>  
+                    <hr style="width: 90%;color:#F7F7F7;margin-left: 15px;margin-top: 15px;">
+                </div>
+            </div>
+            <!-- 最新评价2 -->
+            <div class="matter"  style="display: none;">
+                <!-- 第一个 -->
+                <div class="ma-one" style="height: 300px;">
+                    <ul>
+                        <li>
+                            <div class="tx">
+                                <img src="img/tx1.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <p >苏*****A</p>
+                            <p class="xxx">
+                                <img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt="">
+                                <span style="font-size: 12px;color:#FF6000;">超赞</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                        </li>
+                    </ul>
+                    <p style="margin-left: 60px;">
+                    超级棒，  超级棒，  超级棒，  超级棒，  超级棒。 
+                    </p>
+                    <div class="shop-r">
+                    <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                    </div>
+                    <p class="zan">
+                        <img src="img/zan.png" alt="">
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                    </p>  
+                    <hr style="width: 90%;color:#F7F7F7;margin-left: 15px;margin-top: 15px;">
+                </div>
+                <!-- 第二个 -->
+                <div class="ma-one">
+                        <ul>
+                            <li>
+                                <div class="tx">
+                                    <img src="img/tx1.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <p >匿名用户</p>
+                                <p class="xxx">
+                                    <img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt="">
+                                    <span style="font-size: 12px;color:#FF6000;">超赞</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                            </li>
+                        </ul>
+                        <p style="margin-left: 60px;">
+                        超级棒，  超级棒，  超级棒，  超级棒，  超级棒。 
+                        </p>
+                        <div class="shop-r">
+                        <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                        </div>
+                        <img style="width: 100px;height:100px;margin-left: 60px;margin-top: 10px;" src="img/114.jpeg" alt="">
+                        <p class="zan">
+                            <img src="img/zan.png" alt="">
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                        </p>  
+                        <hr style="width: 90%;color:#F7F7F7;margin-left: 15px;margin-top: 15px;">
+                </div>
+                <!-- 第三个 -->
+                <div class="ma-one">
+                        <ul>
+                            <li>
+                                <div class="tx">
+                                    <img src="img/tx1.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <p >菲*****A</p>
+                                <p class="xxx">
+                                    <img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt="">
+                                    <span style="font-size: 12px;color:#FF6000;">超赞</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                            </li>
+                        </ul>
+                        <p style="margin-left: 60px;">
+                            超级棒，  超级棒，  超级棒，  超级棒，  超级棒。 
+                        </p>
+                        <div class="shop-r">
+                            <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                        </div>
+                        <img style="width: 100px;height:100px;margin-left: 60px;margin-top: 10px;" src="img/114.jpeg" alt="">
+                            <p class="zan">
+                            <img src="img/zan.png" alt="">
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                        </p>  
+                        <hr style="width: 90%;color:#F7F7F7;margin-left: 15px;margin-top: 15px;">
+                </div>
+            </div>
+            <!-- 好评 -->
+            <div class="matter"  style="display: none">
+                <!-- 第一个 -->
+                <div class="ma-one">
+                    <ul>
+                        <li>
+                            <div class="tx">
+                                <img src="img/tx1.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <p >颖*****A</p>
+                            <p class="xxx">
+                                <img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt="">
+                                <span style="font-size: 12px;color:#FF6000;">超赞</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                        </li>
+                    </ul>
+                    <p style="margin-left: 60px;">
+                    超级棒，  超级棒，  超级棒，  超级棒，  超级棒。 
+                    </p>
+                    <div class="shop-r">
+                    <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                    </div>
+                    <img style="width: 100px;height:100px;margin-left: 60px;margin-top: 10px;" src="img/110.jpeg" alt="">
+                    <p class="zan">
+                        <img src="img/zan.png" alt="">
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                    </p>  
+                    <hr style="width: 90%;color:#F7F7F7;margin-left: 15px;margin-top: 15px;">
+                </div>
+                <!-- 第二个 -->
+                <div class="ma-one">
+                        <ul>
+                            <li>
+                                <div class="tx">
+                                    <img src="img/tx1.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <p >菲*****A</p>
+                                <p class="xxx">
+                                    <img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt="">
+                                    <span style="font-size: 12px;color:#FF6000;">超赞</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                            </li>
+                        </ul>
+                        <p style="margin-left: 60px;">
+                        超级棒，  超级棒，  超级棒，  超级棒，  超级棒。 
+                        </p>
+                        <div class="shop-r">
+                        <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                        </div>
+                        <img style="width: 100px;height:100px;margin-left: 60px;margin-top: 10px;" src="img/114.jpeg" alt="">
+                        <p class="zan">
+                            <img src="img/zan.png" alt="">
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                        </p>  
+                        <hr style="width: 90%;color:#F7F7F7;margin-left: 15px;margin-top: 15px;">
+                </div>
+                 <!-- 第三个 -->
+                <div class="ma-one" style="height: 300px;">
+                        <ul>
+                            <li>
+                                <div class="tx">
+                                    <img src="img/tx1.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <p >苏*****A</p>
+                                <p class="xxx">
+                                    <img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt="">
+                                    <span style="font-size: 12px;color:#FF6000;">超赞</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                            </li>
+                        </ul>
+                        <p style="margin-left: 60px;">
+                        超级棒，  超级棒，  超级棒，  超级棒，  超级棒。 
+                        </p>
+                        <div class="shop-r">
+                        <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                        </div>
+                        <p class="zan">
+                            <img src="img/zan.png" alt="">
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                        </p>  
+                        <hr style="width: 90%;color:#F7F7F7;margin-left: 15px;margin-top: 15px;">
+                </div>
+            </div>
+            <!-- 差评 -->
+            <div class="matter"  style="display: none;">
+                <!-- 第一个 -->
+                <div class="ma-one" style="height: 300px;">
+                    <ul>
+                        <li>
+                            <div class="tx">
+                                <img src="img/tx1.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <p >智*****A</p>
+                            <p class="xxx">
+                                <img src="img/xx.png" alt="">
+                                <span style="font-size: 12px;color:#899FBC;">吐槽</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                        </li>
+                    </ul>
+                    <p style="margin-left: 60px;">
+                    食材不新鲜， 食材不新鲜， 食材不新鲜， 食材不新鲜，不好吃。
+                    </p>
+                    <div class="shop-r">
+                    <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                    </div>
+                    <p class="zan">
+                        <img src="img/zan.png" alt="">
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                    </p>  
+                    <hr style="width: 90%;color:#F7F7F7;margin-left: 15px;margin-top: 15px;">
+                </div>
+                <!-- 第二个 -->
+                <div class="ma-one">
+                        <ul>
+                            <li>
+                                <div class="tx">
+                                    <img src="img/tx1.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <p >菲*****A</p>
+                                <p class="xxx">
+                                <img src="img/xx.png" alt="">
+                                <span style="font-size: 12px;color:#899FBC;">吐槽</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                            </li>
+                        </ul>
+                        <p style="margin-left: 60px;">
+                        超级棒，  超级棒，  超级棒，  超级棒，  超级棒。 
+                        </p>
+                        <div class="shop-r">
+                        <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                        </div>
+                        <img style="width: 100px;height:100px;margin-left: 60px;margin-top: 10px;" src="img/114.jpeg" alt="">
+                        <p class="zan">
+                            <img src="img/zan.png" alt="">
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                        </p>  
+                        <hr style="width: 90%;color:#F7F7F7;margin-left: 15px;margin-top: 15px;">
+                </div>
+                 <!-- 第三个 -->
+                 <div class="ma-one" style="height: 300px;">
+                        <ul>
+                            <li>
+                                <div class="tx">
+                                    <img src="img/tx1.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <p >智*****A</p>
+                                <p class="xxx">
+                                    <img src="img/xx.png" alt="">
+                                    <span style="font-size: 12px;color:#899FBC;">吐槽</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                            </li>
+                        </ul>
+                        <p style="margin-left: 60px;">
+                        食材不新鲜， 食材不新鲜， 食材不新鲜， 食材不新鲜，不好吃。
+                        </p>
+                        <div class="shop-r">
+                        <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                        </div>
+                        <p class="zan">
+                            <img src="img/zan.png" alt="">
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                        </p>  
+                        <hr style="width: 90%;color:#F7F7F7;margin-left: 15px;margin-top: 15px;">
+                </div>
+            </div>
+            <!-- 有图 -->
+            <div class="matter"  style="display: none">
+                <!-- 第一个 -->
+                <div class="ma-one">
+                    <ul>
+                        <li>
+                            <div class="tx">
+                                <img src="img/tx1.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <p >清*****A</p>
+                            <p class="xxx">
+                                <img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt="">
+                                <span style="font-size: 12px;color:#FF6000;">超赞</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                        </li>
+                    </ul>
+                    <p style="margin-left: 60px;">
+                    超级棒，  超级棒，  超级棒，  超级棒，  超级棒。 
+                    </p>
+                    <div class="shop-r">
+                    <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                    </div>
+                    <img style="width: 100px;height:100px;margin-left: 60px;margin-top: 10px;" src="img/114.jpeg" alt="">
+                    <img style="width: 100px;height:100px;margin-left: 20px;margin-top: 10px;" src="img/114.jpeg" alt="">
+                    <p class="zan">
+                        <img src="img/zan.png" alt="">
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                    </p>  
+                    <hr style="width: 90%;height:1px;color:salmon;margin-left: 15px;margin-top: 15px;">
+                </div>
+                <!-- 第二个 -->
+                <div class="ma-one">
+                        <ul>
+                            <li>
+                                <div class="tx">
+                                    <img src="img/tx1.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <p >菲*****A</p>
+                                <p class="xxx">
+                                    <img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt="">
+                                    <span style="font-size: 12px;color:#FF6000;">超赞</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                            </li>
+                        </ul>
+                        <p style="margin-left: 60px;">
+                        超级棒，  超级棒，  超级棒，  超级棒，  超级棒。 
+                        </p>
+                        <div class="shop-r">
+                        <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                        </div>
+                        <img style="width: 100px;height:100px;margin-left: 60px;margin-top: 10px;" src="img/114.jpeg" alt="">
+                        <img style="width: 100px;height:100px;margin-left: 10px;margin-top: 10px;" src="img/114.jpeg" alt="">
+                        <img style="width: 100px;height:100px;margin-left: 60px;margin-top: 10px;" src="img/114.jpeg" alt="">
+                        <p class="zan">
+                            <img src="img/zan.png" alt="">
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                        </p>  
+                        <hr style="width: 90%;height:1px;color:salmon;margin-left: 15px;margin-top: 15px;">
+                </div>
+            </div>
+            <!-- 味道好 -->
+            <div class="matter"  style="display: none">
+                <!-- 第一个 -->
+                <div class="ma-one" style="height: 500px;">
+                    <ul>
+                        <li>
+                            <div class="tx">
+                                <img src="img/tx1.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <p >羽*****A</p>
+                            <p class="xxx">
+                                <img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt="">
+                                <span style="font-size: 12px;color:#FF6000;">超赞</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                        </li>
+                    </ul>
+                    <p style="margin-left: 60px;">
+                    超级棒，  超级棒，  超级棒，  超级棒，  超级棒。 
+                    </p>
+                    <div class="shop-r">
+                    <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                    </div>
+                    <img style="width: 100px;height:100px;margin-left: 60px;margin-top: 10px;" src="img/114.jpeg" alt="">
+                    <img style="width: 100px;height:100px;margin-left: 10px;margin-top: 10px;" src="img/114.jpeg" alt="">
+                    <img style="width: 100px;height:100px;margin-left: 60px;margin-top: 10px;" src="img/114.jpeg" alt="">
+                    <p class="zan">
+                        <img src="img/zan.png" alt="">
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                        <button>高纤奶酪</button>
+                    </p>  
+                    <hr style="width: 90%;color:#F7F7F7;margin-left: 15px;margin-top: 15px;">
+                </div>
+                <!-- 第二个 -->
+                <div class="ma-one" >
+                        <ul>
+                            <li>
+                                <div class="tx">
+                                    <img src="img/tx1.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <p >菲*****A</p>
+                                <p class="xxx">
+                                    <img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt="">
+                                    <span style="font-size: 12px;color:#FF6000;">超赞</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                            </li>
+                        </ul>
+                        <p style="margin-left: 60px;">
+                        超级棒，  超级棒，  超级棒，  超级棒，  超级棒。 
+                        </p>
+                        <div class="shop-r">
+                        <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                        </div>
+                        <img style="width: 100px;height:100px;margin-left: 60px;margin-top: 10px;" src="img/114.jpeg" alt="">
+                        <p class="zan">
+                            <img src="img/zan.png" alt="">
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                        </p>  
+                        <hr style="width: 90%;color:#F7F7F7;margin-left: 15px;margin-top: 15px;">
+                </div>
+                <!-- 第三个 -->
+                <div class="ma-one" style="height: 300px;">
+                        <ul>
+                            <li>
+                                <div class="tx">
+                                    <img src="img/tx1.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <p >菲*****A</p>
+                                <p class="xxx">
+                                    <img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt=""><img src="img/xx.png" alt="">
+                                    <span style="font-size: 12px;color:#FF6000;">超赞</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p style="font-size: 14px; margin-left: 130px; color: #999999;">2019-9-05</p>
+                            </li>
+                        </ul>
+                        <p style="margin-left: 60px;">
+                        超级棒，  超级棒，  超级棒，  超级棒，  超级棒。 
+                        </p>
+                        <div class="shop-r">
+                        <p>商家回复：亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，感谢您的选择，生活愉快。亲爱的顾客，生活愉快。</p>
+                        </div>
+                        <p class="zan">
+                            <img src="img/zan.png" alt="">
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            <button>高纤奶酪</button>
+                            
+                        </p>  
+                        <hr style="width: 90%;color:#F7F7F7;margin-left: 15px;margin-top: 15px;">
+                </div>
+            </div>
+        </div>
+    
+
+
+    <!-- 商家选项卡 -->
+    <div class="qiehuaner" style="width:100%;height:900px;background:#F5F5F5;overflow-y: auto">
+            <!-- 商家信息 -->
+           <div class="infor">
+               <p style="font-size: 17px;font-weight: bold; position: relative; top: 20px; margin-left:20px; color: #000;">商家信息</p>
+               <p class="fre" style="font-size: 14px;margin-top: 30px;margin-left: 20px;color: #666666; ">由商家配送提供配送，约36分钟送达，距离1.0km</p>
+               <p class="fre"style="font-size: 14px;margin-top: 5px;margin-left: 20px; color: #666666;">配送费￥0</p>
+           </div>
+             <!-- 商家服务 -->
+           <div class="serve">
+           <p style="font-size: 17px;font-weight: bold; position: relative; top: 20px; margin-left:20px;color: #000;">商家服务</p>
+           <ul>
+               <li style="height: 20px">
+                   <div class="pei" style="margin-top: 35px;">
+                       <p>赔 </p>
+                   </div>
+                   <span class="acti" >商家原因导致订单取消，赔付代金券</span>
+               </li>
+               <li style="height: 20px">
+                   <div class="pei">
+                       <p>保</p> 
+                   </div>
+                   <span class="acti" >商家原因导致订单取消，赔付代金券</span>
+               </li>
+               <li style="height: 20px">
+                   <div class="pei">
+                       <p>票</p>
+                   </div>
+                   <span class="acti" >商家原因导致订单取消，赔付代金券</span>
+               </li>
+           </ul>
+       
+           </div>
+             <!-- 商家实景 -->
+           <div class="live">
+               <p style="font-size: 17px;font-weight: bold; position: relative; top: 20px; margin-left:20px; color: #000;">商家实景</p>
+               <img src="img/sj1.webp.jpg" alt="">
+               <img src="img/sj2.webp.jpg" alt="">
+           </div>
+           <!-- 商家信息最后  -->
+           <ul class="mui-table-view" style="margin-top: 15px;overflow-y: auto;">
+               <li class="mui-table-view-cell" style="height: 120px;">
+                   <p style="font-size: 17px;font-weight: bold; position: relative; top: 10px; margin-left:8px;color: #000;">商家信息</p>
+                   <p style="font-size: 13px;color:#000;margin-top: 10px;margin-left: 7px; ">本店主要经营现烤面包、生日蛋糕、甜品饮料、生日甜品台、婚礼甜品台、婚礼蛋糕、公司下午茶歇、公司生日会、企业商务庆典大蛋糕等甜品。电话13653685568</p>    
+               </li>
+               <li class="mui-table-view-cell" style="height: 50px;">
+                   <p style="line-height: 26px;"><span style="color: #000; font-size:14px;">品类</span><span style="margin-left: 70%">面包、甜点</span></p>
+               </li>
+               <li class="mui-table-view-cell" style="height: 50px;">
+                   <p style="line-height: 26px;"><span style="color: #000; font-size:14px;">商家电话</span>
+                       <span style="margin-left: 60%;color: #0af;">
+                       <img style="width: 13px; height: 13px; " src="img/lx.png" alt="">
+                       联系商家</span>
+                   </p>
+               </li>
+               <li class="mui-table-view-cell" style="height: 50px;">
+                       <p style="line-height: 26px;"><span style="color: #000; font-size:14px;">地址</span><span style="margin-left: 58%">山西大学商务学院</span></p>
+               </li>
+               <li class="mui-table-view-cell" style="height: 50px;">
+                       <p style="line-height: 26px;"><span style="color: #000; font-size:14px;">营业时间</span><span style="margin-left: 62%">07:00-21:00</span></p>
+               </li>
+           </ul>
+          <!-- 营业资质 -->
+          <div class="bus">
+               <p style="font-size: 17px;font-weight: bold; position: relative; top: 20px; margin-left:10px; color: #000;">商家实景</p>
+          </div>
+          </div>
+           <div class="gouwucha" style="width:100%;background:#363636;height:50px;position: fixed;bottom: 0;">
+               <span style="color:white;">未选中商品</span> 
+           </div>
+
+
+
+
+
+
+        <!--#3190E8  -->
+    <!-- 购物车 -->
+    <div class="gouwuche" style="width:100%;background:#363636;height:50px;position: fixed;bottom: 0;display: flex;justify-content: space-around;align-items: center">
+         <div style="position:relative;">
+            <img class="gouwutupian" src="img/gouwu.png" alt="">
+            <div class="zuoxiashuliang" style="display:none;width:13px;height:13px;text-align: center;line-height: 15px;;border-radius:50%;background:red;color:white;position: absolute;top:0;right: 0;font-size:13px;">0</div> 
+          
+        </div> 
+        <span class="youxia" style="color:white;">未选中商品</span> 
+        <span class="zhongjian" style="color:white;">38元起送</span>
+
+      
+      
+    </div>
+    <p class="yidian" style="display:none;width:100%;height:200px;background: rgba(155, 155, 155, 0.9);position: fixed;bottom: 40px;overflow-y:auto;">
+          <span style="display: inline-block;height:50px;width:100%;line-height:50px;border-bottom:1px solid #ccc;font-weight: 600;color: white">已选中的商品
+          <button class="qingkong" style="background:#0af;font-weight:1000;height: 100%;margin-left: 10%">清空</button> </span>
+    </p>
+   
+
+
+
+
+    <script>
+        var qiehuanyi = document.getElementsByClassName('qiehuanyi')
+        var qiehuaner = document.getElementsByClassName('qiehuaner')
+        var gouwuche = document.getElementsByClassName('gouwuche')[0]
+        var shuliang = document.getElementsByClassName('shuliang')
+        var danjia = document.getElementsByClassName('danjia')
+        var jian = document.getElementsByClassName('jian6')
+        var jia = document.getElementsByClassName('jia')
+        var xiaoji = document.getElementsByClassName('xiaoji')
+        var yh = document.getElementsByClassName('yh')
+        var gouwuche = document.getElementsByClassName('gouwuche')[0]
+        var gouwutupian = document.getElementsByClassName('gouwutupian')[0]
+        var zuoxiashuliang = document.getElementsByClassName('zuoxiashuliang')[0]
+        var zhongjian = document.getElementsByClassName('zhongjian')[0]
+        var youxia = document.getElementsByClassName('youxia')[0]
+        var yidian = document.getElementsByClassName('yidian')[0]
+        var caiming = document.getElementsByClassName('caiming')
+        var qingkong = document.getElementsByClassName('qingkong')[0]
+
+
+  var btns = document.querySelectorAll('.btn')
+        var contents = document.querySelectorAll('.matter')
+        var m = 0
+        for (let i=0;i<btns.length;i++) {
+            //btns[i].index = i
+            btns[i].onclick=function(){
+                btns[m].style.background = '#EBF5FF'
+                btns[m].style.color = '#666666'
+                contents[m].style.display="none"
+                btns[i].style.background = '#0af'
+                btns[i].style.color = '#fff'
+                contents[i].style.display="block"
+
+                m = i
+            }
+        }
+
+
+        // 左边食品列表
+        var t = 0
+        for(let u = 0;u<yh.length;u++){
+          yh[u].onclick = function(){
+            yh[t].style.color = "#aaa"
+            yh[t].style.fontWeight = "800"
+            yh[t].style.borderBottom = "1px #ccc solid"
+            yh[u].style.color = "#000"
+            yh[u].style.borderBottom = "4px #aaa solid"
+            yh[u].style.fontWeight = "1000"
+         
+            t = u
+          }
+
+        }
+       
+
+        //增加数量  价格   
+        
+        for(let k  = 0;k<jian.length;k++){
+            jia[k].onclick = function(){
+                shuliang[k].innerText ++
+                zuoxiashuliang.innerHTML++
+                var sp = document.createElement('span')
+                sp.innerHTML = caiming[k].innerHTML +'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ danjia[k].innerHTML+'元'
+                sp.className = "yidian2"
+                yidian.appendChild(sp)
+                xiaoji[k].innerText = shuliang[k].innerText*danjia[k].innerText
+            
+                    var sum = 0
+                    for(let f =0;f<xiaoji.length;f++){
+                            sum= (xiaoji[f].innerText-0)+(sum-0)
+                    }
+                    if(sum==0){
+                        gouwuche.style.background="#363636"
+                        gouwutupian.src="img/gouwu.png"
+                        zuoxiashuliang.style.display="none"
+                        zhongjian.innerHTML="未选中商品"
+                        youxia.innerHTML = "38元起送"
+                        zhongjian.className = "aaa"
+                        shuliang[k].innerText = "0"
+                    }else if(sum<38){
+                        gouwuche.style.background="#3190e8"
+                        gouwutupian.src="img/gouwu1.png"
+                        zuoxiashuliang.style.display="block"
+                        zhongjian.innerHTML="还差"+(38-sum)+"元起送"
+                        youxia.innerHTML = "￥"+sum
+                        youxia.style.fontSize="23px"
+                        youxia.style.color = "#000"
+                        zhongjian.className = "aaa"
+                        
+                                var ufo = 0
+                                gouwutupian.onclick = function(){
+                                        if(ufo ==0 ){
+                                                yidian.style.display = "block"
+                                                        qingkong.onclick = function(){
+                                                                for(var jay = 0;jay<shuliang.length;jay++){
+                                                                    shuliang[jay].innerHTML="0"
+                                                                    xiaoji.innerHTML = "0"
+                                                                }
+                                                                gouwuche.style.background="#363636"
+                                                                gouwutupian.src="img/gouwu.png"
+                                                                zuoxiashuliang.style.display="none"
+                                                                zhongjian.innerHTML="未选中商品"
+                                                                youxia.innerHTML = "38元起送"
+                                                                zhongjian.className = "aaa"
+                                                                shuliang[k].innerText = "0"
+                                                                var elements = document.getElementsByClassName('yidian2');
+                                                                    for(var i = elements.length - 1; i >= 0; i--) { 
+                                                                    elements[i].parentNode.removeChild(elements[i]); 
+                                                                    }
+                                                                sum =0
+                                                                zuoxiashuliang.innerHTML="0"
+                                                        }
+                                                ufo =1
+                                        }else{
+                                                yidian.style.display = "none"
+                                                ufo =0
+                                            }
+                                } 
+                    }else if(sum>38){
+                        gouwuche.style.background="#3190e8"
+                        gouwutupian.src="img/gouwu1.png"
+                        zuoxiashuliang.style.display="block"
+                        zhongjian.innerHTML="结算"
+                        zhongjian.className = "jiesuan"
+                        youxia.innerHTML = "￥"+sum
+
+                        youxia.style.fontSize="23px"
+                        youxia.style.color = "#000"
+                        var ufo = 0
+                                gouwutupian.onclick = function(){
+                                        if(ufo ==0 ){
+                                                yidian.style.display = "block"
+                                                        qingkong.onclick = function(){
+                                                                for(var jay = 0;jay<shuliang.length;jay++){
+                                                                    shuliang[jay].innerHTML="0"
+                                                                    xiaoji.innerHTML = "0"
+                                                                }
+                                                                gouwuche.style.background="#363636"
+                                                                gouwutupian.src="img/gouwu.png"
+                                                                zuoxiashuliang.style.display="none"
+                                                                zhongjian.innerHTML="未选中商品"
+                                                                youxia.innerHTML = "38元起送"
+                                                                zhongjian.className = "aaa"
+                                                                shuliang[k].innerText = "0"
+                                                                var elements = document.getElementsByClassName('yidian2');
+                                                                    for(var i = elements.length - 1; i >= 0; i--) { 
+                                                                    elements[i].parentNode.removeChild(elements[i]); 
+                                                                    }
+                                                                    sum =0
+                                                                zuoxiashuliang.innerHTML="0"
+                                                        }
+                                                ufo =1
+                                        }else{
+                                                yidian.style.display = "none"
+                                                ufo =0
+                                            }
+                                } 
+                        
+                    }
+
+           
+            }
+               
+            jian[k].onclick = function(){
+                if( shuliang[k].innerText==0){
+                    shuliang[k].innerText = 0
+                }else{
+                    shuliang[k].innerText --
+                    zuoxiashuliang.innerHTML--
+                   yidian.removeChild(yidian.lastChild)
+                  // console.log(yidian.getElementsByTagName('span'))
+                   // var child = yidian.getElementsByTagName('span')
+                    
+                    xiaoji[k].innerText = shuliang[k].innerText*danjia[k].innerText
+                        var sum = 0
+                    for(let f =0;f<xiaoji.length;f++){
+                            sum= (xiaoji[f].innerText-0)+(sum-0)
+                    
+                    }
+                    if(sum==0){
+                        gouwuche.style.background="#363636"
+                        gouwutupian.src="img/gouwu.png"
+                        zuoxiashuliang.style.display="none"
+                        zhongjian.innerHTML="未选中商品"
+                        youxia.innerHTML = "38元起送"
+                        zhongjian.className = "aaa"
+                        youxia.style.fontSize="14px"
+                        youxia.style.color = "white"
+                        shuliang[k].innerText = "0"
+                    }else if(sum<38){
+                        gouwuche.style.background="#3190e8"
+                        gouwutupian.src="img/gouwu1.png"
+                        zuoxiashuliang.style.display="block"
+                        zhongjian.innerHTML="还差"+(38-sum)+"元起送"
+                        youxia.innerHTML = "￥"+sum
+                        youxia.style.fontSize="23px"
+                        youxia.style.color = "#000"
+                        zhongjian.className = "aaa"
+                        var ufo = 0
+                                gouwutupian.onclick = function(){
+                                        if(ufo ==0 ){
+                                                yidian.style.display = "block"
+                                                        qingkong.onclick = function(){
+                                                                for(var jay = 0;jay<shuliang.length;jay++){
+                                                                    shuliang[jay].innerHTML="0"
+                                                                    xiaoji.innerHTML = "0"
+                                                                }
+                                                                gouwuche.style.background="#363636"
+                                                                gouwutupian.src="img/gouwu.png"
+                                                                zuoxiashuliang.style.display="none"
+                                                                zhongjian.innerHTML="未选中商品"
+                                                                youxia.innerHTML = "38元起送"
+                                                                zhongjian.className = "aaa"
+                                                                shuliang[k].innerText = "0"
+                                                                var elements = document.getElementsByClassName('yidian2');
+                                                                    for(var i = elements.length - 1; i >= 0; i--) { 
+                                                                    elements[i].parentNode.removeChild(elements[i]); 
+                                                                    }
+                                                                    sum =0
+                                                                zuoxiashuliang.innerHTML="0"
+                                                        }
+                                                ufo =1
+                                        }else{
+                                                yidian.style.display = "none"
+                                                ufo =0
+                                            }
+                                } 
+                    }else if(sum>38){
+                        gouwuche.style.background="#3190e8"
+                        gouwutupian.src="img/gouwu1.png"
+                        zuoxiashuliang.style.display="block"
+                        zhongjian.innerHTML="结算"
+                        zhongjian.className = "jiesuan"
+                        youxia.innerHTML = "￥"+sum
+
+                        youxia.style.fontSize="23px"
+                        youxia.style.color = "#000"
+                        var ufo = 0
+                                gouwutupian.onclick = function(){
+                                        if(ufo ==0 ){
+                                                yidian.style.display = "block"
+                                                        qingkong.onclick = function(){
+                                                                for(var jay = 0;jay<shuliang.length;jay++){
+                                                                    shuliang[jay].innerHTML="0"
+                                                                    xiaoji.innerHTML = "0"
+                                                                }
+                                                                gouwuche.style.background="#363636"
+                                                                gouwutupian.src="img/gouwu.png"
+                                                                zuoxiashuliang.style.display="none"
+                                                                zhongjian.innerHTML="未选中商品"
+                                                                youxia.innerHTML = "38元起送"
+                                                                zhongjian.className = "aaa"
+                                                                shuliang[k].innerText = "0"
+                                                                var elements = document.getElementsByClassName('yidian2');
+                                                                    for(var i = elements.length - 1; i >= 0; i--) { 
+                                                                    elements[i].parentNode.removeChild(elements[i]); 
+                                                                    }
+                                                                    sum =0
+                                                                zuoxiashuliang.innerHTML="0"
+                                                        }
+                                                ufo =1
+                                        }else{
+                                                yidian.style.display = "none"
+                                                ufo =0
+                                            }
+                                } 
+                        
+                    }
+                }
+            }
+        }
+
+        // for(var p = 0;p<jia.length;p++){
+        //     jia[p].index = p
+        //     jia[p].onclick = function(){ 
+        //         shuliang[this.index].innerHTML++
+        //         xiaoji[this.index].innerHTML = * danjia[this.index].innerHTML
+        //         console.log( (xiaoji[this.index].innerHTML-0)+( danjia[this.index].innerHTML-0) )
+        //     }
+        // }
+       
+
+        // 切换商品 评价 商家
+        var num1 = 0
+        for(let i = 0;i<qiehuanyi.length;i++){
+            qiehuanyi[i].onclick = function(){
+               
+                qiehuanyi[num1].style.color = "#bbb"
+                qiehuanyi[num1].style.borderBottom="none"
+                qiehuaner[num1].style.display = "none"
+                qiehuanyi[i].style.color = "black"
+                qiehuanyi[i].style.borderBottom="2px solid #0af"
+                qiehuaner[i].style.display = "block"
+               
+                num1 = i
+
+            }
+        }
+    
+    
+    </script>
+</body>
+</html>
