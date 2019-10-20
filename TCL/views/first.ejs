@@ -1,0 +1,218 @@
+<% include head.ejs %>
+<% include NoLoginNav.ejs %>
+<link rel="stylesheet" href="/css/first.css">
+<script src="/javascripts/first.js"></script>
+<script src="/javascripts/jquery.js"></script>
+<!-- 轮播图 -->
+<div class="lunbo">
+    <img class="show" width="100%" style="height: 480px;" src="/images/z-lun1.jpg" alt="">
+    <img class="show" width="100%" style="height: 480px;display: none;" src="/images/z-lun2.jpg" alt="">
+    <div class="menu">
+        <ul class="menu-content">
+            <li><span class="menuair">空调爆款</span>
+                <i class="fa fa-angle-right"></i>
+                <div class="menu-hidden">
+                    <div class="air">
+                        <div class="air1">
+                            <div class="airImage">
+                                <img width="83%" style="margin-left:13px;margin-top: 10px;" src="/images/z-air.jpg" alt="">
+                            </div>
+                            <div class="airContent">
+                                <p class="air_desc">TCL大1匹1级能效冷暖变频空调</p>
+                                <p class="price">2599.00</p>
+                            </div>
+                        </div>
+                        <div class="air1"></div>
+                    </div>
+                    <div class="air">
+                        <div class="air1"></div>
+                        <div class="air1"></div>
+                    </div>
+                    <div class="air">
+                        <div class="air1"></div>
+                        <div class="air1"></div>
+                    </div>
+                </div>
+            </li>
+            <li><span class="menuair">热销电视</span>
+                <i class="fa fa-angle-right"></i>
+                <div class="menu-hidden">
+                    <div class="air">
+                        <div class="air1">
+                            <div class="airImage">
+                                <img width="83%" style="margin-left:13px;margin-top:8px;" src="/images/z-tv1.jpg" alt="">
+                            </div>
+                            <div class="airContent">
+                                <p class="tv_desc" style="margin-top:55px;">65英寸  65Q8全场景AI电视</p>
+                                <p class="price">5999.00</p>
+                            </div>
+                        </div>
+                        <div class="air1"></div>
+                    </div>
+                    <div class="air">
+                        <div class="air1"></div>
+                        <div class="air1"></div>
+                    </div>
+                    <div class="air">
+                        <div class="air1"></div>
+                        <div class="air1"></div>
+                    </div>
+                </div>
+            </li>
+            <li><span class="menuair">人气冰箱</span>
+                <i class="fa fa-angle-right"></i>
+                <div class="menu-hidden">
+                    <div class="air">
+                        <div class="air1">
+                            <div class="airImage">
+                                <img width="83%" style="margin-left:13px;margin-top: 10px;" src="/images/z-ice1.png" alt="">
+                            </div>
+                            <div class="airContent">
+                                <p class="tv_desc">TCL163L双门节能家用小冰箱</p>
+                                <p class="price">1049.00</p>
+                            </div>
+                        </div>
+                        <div class="air1"></div>
+                    </div>
+                    <div class="air">
+                        <div class="air1"></div>
+                        <div class="air1"></div>
+                    </div>
+                    <div class="air">
+                        <div class="air1"></div>
+                        <div class="air1"></div>
+                    </div>
+                </div>
+            </li>
+            <li><span class="menuair">品质洗衣机</span>
+                <i class="fa fa-angle-right"></i>
+                <div class="menu-hidden">
+                    <div class="air">
+                        <div class="air1">
+                            <div class="airImage">
+                                <img width="83%" style="margin-left:13px;margin-top: 10px;" src="/images/z-wash1.png" alt="">
+                            </div>
+                            <div class="airContent">
+                                <p class="tv_desc" style="margin-top:55px;">TCL9公斤变频滚筒洗衣机</p>
+                                <p class="price">1499.00</p>
+                            </div>
+                        </div>
+                        <div class="air1"></div>
+                    </div>
+                    <div class="air">
+                        <div class="air1"></div>
+                        <div class="air1"></div>
+                    </div>
+                    <div class="air">
+                        <div class="air1"></div>
+                        <div class="air1"></div>
+                    </div>
+                </div>
+            </li>
+            <li><span class="menuair">厨卫电器</span>
+                <i class="fa fa-angle-right"></i>
+                <div class="menu-hidden">
+                    <div class="air">
+                        <div class="air1">
+                            <div class="airImage">
+                                <img width="83%" style="margin-left:13px;margin-top: 10px;" src="/images/z-dianqi1.png" alt="">
+                            </div>
+                            <div class="airContent">
+                                <p class="tv_desc" style="margin-top:55px;">TCL KJ206F-A301净化器</p>
+                                <p class="price">499.00</p>
+                            </div>
+                        </div>
+                        <div class="air1"></div>
+                    </div>
+                    <div class="air">
+                        <div class="air1"></div>
+                        <div class="air1"></div>
+                    </div>
+                    <div class="air">
+                        <div class="air1"></div>
+                        <div class="air1"></div>
+                    </div>
+                </div>
+            </li>
+            <li><span class="menuair">XESS浮窗电视</span>
+                <i class="fa fa-angle-right"></i>
+                <div class="menu-hidden">
+                    <div class="air">
+                        <div class="air1">
+                            <div class="airImage">
+                                <img width="83%" style="margin-left:13px;margin-top: 10px;" src="/images/z-xess1.png" alt="">
+                            </div>
+                            <div class="airContent">
+                                <p class="tv_desc">XESS 65A100H 65英寸 装饰美学 浮窗全场景TV</p>
+                                <p class="price">19999.00</p>
+                            </div>
+                        </div>
+                        <div class="air1"></div>
+                    </div>
+                    <div class="air">
+                        <div class="air1"></div>
+                        <div class="air1"></div>
+                    </div>
+                    <div class="air">
+                        <div class="air1"></div>
+                        <div class="air1"></div>
+                    </div>
+                </div>
+            </li>
+            <li><span class="menuair">配件周边</span>
+                <i class="fa fa-angle-right"></i>
+                <div class="menu-hidden">
+                    <div class="air">
+                        <div class="air1">
+                            <div class="airImage">
+                                <img width="83%" style="margin-left:13px;margin-top: 10px;" src="/images/z-peijian1.png" alt="">
+                            </div>
+                            <div class="airContent">
+                                <p class="tv_desc">TCL RC801D智能语音电视遥控器</p>
+                                <p class="price">149.00</p>
+                            </div>
+                        </div>
+                        <div class="air1"></div>
+                    </div>
+                    <div class="air">
+                        <div class="air1"></div>
+                        <div class="air1"></div>
+                    </div>
+                    <div class="air">
+                        <div class="air1"></div>
+                        <div class="air1"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <ul class="dot">
+        <li class="dot1" style="background: red;"></li>
+        <li class="dot1"></li>
+    </ul>
+    <img class="prev" src="/images/z-left.png" alt="">
+    <img class="next" src="/images/z-right.png" alt="">
+</div>
+<!-- 专区 -->
+<div class="zhuanqu">
+    <div><img width="100%" src="/images/z-zhuan1.jpg" alt=""></div>
+    <div><img width="100%" src="/images/z-zhuan2.jpg" alt=""></div>
+    <div><img width="100%" src="/images/z-zhuan3.jpg" alt=""></div>
+</div>
+<!-- 电视 -->
+<div class="tv">
+    <h2>电视</h2>
+    <ul class="tv1">
+        <li style="margin-left:20px">助力中国大屏打折,</li>
+        <li>AI</li>
+        <li>XESS浮窗电视</li>
+    </ul>
+    <ul>
+        <li class="more">更多
+            <span>></span>
+        </li>
+    </ul>
+</div>
+<div></div>
+<% include bottom.ejs %>
+<% include foot.ejs %>
