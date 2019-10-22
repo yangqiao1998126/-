@@ -30,11 +30,18 @@ db.then(() => {
     app.use('/NoLoginNav', (req, res) => {
         res.render('NoLoginNav', {})
     })
-
-
-
 }).catch((err) => {
     console.log('数据库连接失败', err)
+})
+
+// 首页
+app.use('/first',(req,res)=>{
+    res.render('first')
+})
+
+//  企业采购
+app.use('/businessBuy',(req,res)=>{
+    res.render('businessBuy')
 })
 
 //绑定端口监听
