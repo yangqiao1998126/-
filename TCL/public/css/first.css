@@ -10,6 +10,7 @@ li{
     height:480px;
     background:rosybrown;
     position: relative;
+    cursor: pointer;
 }
 .menu{
     width:18%;
@@ -71,7 +72,7 @@ li{
     font-weight: 0;
 }
 .menu-hidden{
-    width:680px;
+    width:730px;
     height:480px;
     background: #fff;
     position:absolute;
@@ -91,19 +92,20 @@ li{
 .air1{
     width:340px;
     height:160px;
-    background: pink;
+    /* background: pink; */
+    margin-left:13px;
     float:left;
 }
 .airImage,.airContent{
     width:170px;
     height:100%;
-    background: purple;
+    /* background: purple; */
     float:left;
 }
 .air_desc{
     color:black;
     font-size:14px;
-    margin-top:45px;
+    margin-top:50px;
 }
 .price{
     color:#ff2524;
@@ -136,7 +138,7 @@ li{
     height:45px;
     /* background: cadetblue; */
     margin: 0 auto;
-    margin-top:40px;
+    margin-top:43px;
 }
 h2{
     font-size:22px;
@@ -162,7 +164,134 @@ h2{
     float:right;
     font-size:12px;
     color:#fe0000;
-    right:0;
+    margin-right:15px;
     line-height: 45px;
     cursor: pointer;
+}
+.tv_serise{
+    width:91%;
+    height:615px;
+    /* background: cadetblue; */
+    margin: 15px auto 0;
+}
+.tv_serise_lf{
+    width:24%;
+    height:574px;
+    /* background: blue; */
+    float:left;
+}
+.tv_serise_lr{
+    width:76%;
+    height:574px;
+    /* background:pink; */
+    float:left;
+}
+.tv_serise_lr_top,.tv_serise_lr_bottom{
+    width:100%;
+    height:285px;
+}
+.tv_serise1{
+    width:32%;
+    height:287px;
+    /* background: darkgoldenrod; */
+    float:left;
+    margin-left:11px;
+    text-align: center;
+}
+.tv_serise1:hover{
+    box-shadow: 0 0 8px #ccc;
+    cursor: pointer;  
+}
+.box_news{
+    width:91%;
+    height:360px;
+    /* background: chartreuse; */
+    margin:20px auto 20px;
+}
+.newsbox{
+    width:24%;
+    height:360px;
+    /* background: coral; */
+    float:left;
+    margin-right: 11px;
+}
+.news_img{
+    width:100%;
+    height:190px;
+    /* background: coral; */
+    overflow: hidden;
+    cursor: pointer;
+}
+.news_desc{
+    width:100%;
+    height:170px;
+    background:#f3f3f3;
+}
+.news_title{
+    font-size:13px;
+    color:#333;
+    float:left;
+    margin-top:21px;
+    margin-left:5px;
+}
+.li{
+    /* width:15%; */
+    margin-top:20px;
+    margin-left:12px;
+    float:left;
+    line-height: 20px;
+    text-align: center;
+}
+.clear::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.detail{
+    font-size:12px;
+    color:#666;
+    margin-left:12px;
+    margin-top:15px;
+}
+.look{
+    font-size:12px;
+    color:#666;
+    margin-left: 13px;
+    margin-top:20px;
+    cursor: pointer;
+}
+.look1{
+    text-align: center;
+    margin-top:40px;
+    margin-bottom:50px;
+}
+.lookmore{
+    font-size:12px;
+    color:#666;
+    cursor: pointer;
+}
+.look:hover,.lookmore:hover{
+    color:red;
+}
+.goods_nav{
+    width:53px;
+    height:164px;
+    border:solid 0.5px #fff;
+    background: #fff;
+    position: fixed;
+    left:3px;
+    z-index: 1;
+    top:200px;
+}
+.goods_nav li a{
+    font-size:12px;
+    color:#9f9f9f;
+    display: block;
+    text-align: center;
+    border-bottom: 0.8px solid #f4f4f4;
+    padding:12px 0;
+    text-decoration: none;
+}
+.goods_nav li a:hover{
+    color:red;
 }

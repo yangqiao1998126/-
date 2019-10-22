@@ -7,6 +7,7 @@ let cookieParser = require('cookie-parser')
 let userModel = require('../model/userModel')
 //引入 空调模型
 let airConditioner = require('../model/airConditioner')
+let firstGoods = require('../model/firstGoods')
 
 let router = new Router()
 //引入path模块，path模块是node中的核心模块，无需下载，直接引入即可使用
@@ -51,7 +52,51 @@ router.get('/usercenter', async (request, response) => {
     } else {
         response.redirect('/NoLoginNav')
     }
-
 })
+
+// 企业采购
+router.get('/businessBuy',(req,res)=>{
+    res.render('businessBuy')
+})
+
+// 首页
+// router.get('/first',(req,res)=>{
+//     console.log(1)
+//     firstGoods.find().limit(3).exec((err,data)=>{
+//         console.log(2)
+//         console.log(data)
+//     })
+//     console.log(3)
+//     res.send('123')
+//     //res.render('first')
+// })
+router.get('/',(req,res)=>{
+    firstGoods.find().limit(6).exec(function(err,data){
+        var  a =data      
+        firstGoods.find().limit(6).skip(6).exec(function(err,data){
+            var b = data
+            firstGoods.find().limit(6).skip(12).exec(function(err,data){
+                var c = data
+                firstGoods.find().limit(6).skip(18).exec(function(err,data){
+                    var d = data
+                    firstGoods.find().limit(6).skip(24).exec(function(err,data){
+                        var e = data
+                        firstGoods.find().limit(6).skip(30).exec(function(err,data){
+                            var f = data
+                            firstGoods.find().limit(6).skip(36).exec(function(err,data){
+                                var g = data
+                                firstGoods.find().limit(4).skip(42).exec(function(err,data){
+                                    var h = data
+                                    res.render('first',{a,b,c,d,e,f,g,h})
+                                })
+                            })
+                        })
+                    })
+                })
+            })
+        })
+    }) 
+})
+
 
 module.exports = router
